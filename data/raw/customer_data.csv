@@ -1,0 +1,1001 @@
+CustomerID	Date	Month	Season	Age	Gender	Region	Income	Membership	ProductsPurchased	PurchaseFrequency	AverageOrderValue	DiscountUsed	MarketingChannel	SatisfactionScore	ChurnRisk	CustomerLifetimeValue	
+1	2026-04-06	April	Q2	29	Female	North	96888	Bronze	7	7	86.38	No	Social Media	4.7	Low	3378.24	
+2	2026-02-25	February	Q1	60	Female	South	118411	Bronze	12	8	140.02	Yes	Direct	5	Low	5321.86	
+3	2026-06-08	June	Q2	21	Female	East	125889	Silver	11	9	116.8	No	Email	4.1	Low	6865.98	
+4	2026-04-29	April	Q2	50	Male	East	63167	Bronze	7	5	129.63	No	Email	3.9	Medium	1737.17	
+5	2026-03-30	March	Q1	23	Male	East	54467	Silver	6	5	109.62	No	Social Media	4.3	Low	3168.77	
+6	2026-01-31	January	Q1	60	Female	South	108282	Bronze	5	4	101.18	No	Direct	3.3	Medium	1556.55	
+7	2026-05-28	May	Q2	57	Male	North	89318	Silver	8	5	128.97	No	Social Media	5	Low	2723.37	
+8	2026-08-19	August	Q3	60	Female	North	115309	Bronze	9	6	132.78	No	Social Media	3.9	Medium	3437.97	
+9	2026-05-16	May	Q2	67	Male	North	128942	Bronze	9	9	70.73	No	Direct	3.9	Medium	1666.88	
+10	2026-09-26	September	Q3	39	Male	North	105679	Bronze	7	5	134.59	No	Referral	3.7	Medium	2163.99	
+11	2026-10-21	October	Q4	45	Male	West	33894	Bronze	7	7	135.59	Yes	Referral	4.1	Low	4660.94	
+12	2026-12-31	December	Q4	50	Male	West	112042	Gold	11	9	258.23	Yes	Referral	3.0	Medium	13761.57	
+13	2026-07-03	July	Q3	18	Female	North	108477	Silver	12	7	110.65	Yes	Direct	3.3	Medium	2821.16	
+14	2026-03-12	March	Q1	67	Female	North	130049	Silver	7	5	150.44	No	Social Media	3.4	Medium	2495.04	
+15	2026-01-17	January	Q1	19	Female	West	142423	Bronze	7	5	76.44	Yes	Direct	4.8	Low	2041.5	
+16	2026-05-15	May	Q2	23	Female	West	30709	Silver	2	3	149.96	No	Email	4.3	Medium	2047.99	
+17	2026-08-08	August	Q3	25	Female	West	42896	Bronze	9	5	123.81	No	Social Media	4.8	Low	2650.03	
+18	2026-03-15	March	Q1	56	Male	South	100644	Gold	7	5	117.02	No	Email	4.5	Low	2901.98	
+19	2026-12-04	December	Q4	46	Female	South	109846	Silver	12	8	261.79	No	Referral	3.9	Medium	13473.89	
+20	2026-03-20	March	Q1	68	Male	North	37487	Gold	5	6	175.22	No	Email	3.5	Medium	4542.45	
+21	2026-06-25	June	Q2	41	Male	North	140004	Gold	5	5	167.18	No	Direct	3.8	Medium	4241.11	
+22	2026-01-20	January	Q1	20	Male	North	28717	Bronze	6	4	125.86	Yes	Direct	4.3	Medium	2172.74	
+23	2026-06-20	June	Q2	50	Female	West	69960	Platinum	15	11	108.55	No	Referral	5	Low	7570.79	
+24	2026-09-18	September	Q3	37	Male	East	71895	Bronze	9	6	115.69	No	Email	4.0	Low	3496.31	
+25	2026-12-22	December	Q4	36	Male	South	116450	Bronze	12	7	100.46	Yes	Social Media	4.6	Low	4066.85	
+26	2026-01-05	January	Q1	46	Female	North	116026	Silver	5	5	146.17	No	Direct	2.9	High	1690.34	
+27	2026-05-11	May	Q2	70	Male	North	77156	Silver	10	6	127.26	No	Referral	4.1	Low	4269.64	
+28	2026-03-09	March	Q1	28	Male	North	61856	Bronze	7	6	113.29	No	Email	4.9	Low	2364.79	
+29	2026-08-31	August	Q3	43	Female	East	80187	Bronze	11	9	169.32	Yes	Email	3.7	Medium	4531.77	
+30	2026-09-09	September	Q3	55	Male	West	143713	Silver	6	6	122.41	No	Email	3.5	Medium	3212.74	
+31	2026-11-27	November	Q4	45	Female	West	119023	Bronze	9	8	163.26	Yes	Social Media	2.9	High	4677.49	
+32	2026-07-11	July	Q3	47	Female	West	47485	Bronze	9	7	58.47	No	Email	4.0	Low	1916.4	
+33	2026-11-22	November	Q4	19	Female	West	83205	Silver	17	11	201.35	Yes	Social Media	4.1	Low	13298.49	
+34	2026-09-29	September	Q3	38	Male	South	127302	Gold	11	7	173.79	No	Referral	3.6	Medium	6414.91	
+35	2026-08-17	August	Q3	32	Female	North	49086	Bronze	7	5	130.65	Yes	Referral	4.3	Low	2957.32	
+36	2026-06-28	June	Q2	36	Male	North	92566	Bronze	8	5	173.2	No	Social Media	3.8	Medium	3752.18	
+37	2026-05-09	May	Q2	47	Female	West	78409	Gold	7	6	90.61	No	Social Media	3.7	Medium	2355.19	
+38	2026-12-08	December	Q4	20	Male	East	40827	Gold	15	11	203.19	Yes	Referral	4.8	Low	23011.43	
+39	2026-09-07	September	Q3	69	Male	South	114877	Silver	9	6	150.23	No	Referral	3.2	Medium	3940.46	
+40	2026-02-11	February	Q1	30	Female	South	49850	Silver	11	9	118.19	Yes	Social Media	3.3	Medium	3460.9	
+41	2026-10-13	October	Q4	59	Male	West	40666	Gold	7	7	158.01	No	Referral	3.8	Medium	4751.85	
+42	2026-07-24	July	Q3	40	Female	East	82975	Bronze	6	4	25.91	No	Email	2.1	High	247.33	
+43	2026-05-07	May	Q2	38	Female	East	99638	Platinum	9	10	145.31	No	Referral	4.4	Low	8184.32	
+44	2026-05-01	May	Q2	69	Female	West	76215	Gold	7	9	191.64	No	Email	3.3	Medium	5717.55	
+45	2026-09-08	September	Q3	40	Female	South	67816	Silver	6	4	77.98	No	Direct	3.4	Medium	1284.47	
+46	2026-09-17	September	Q3	59	Female	South	51955	Bronze	7	6	139.53	No	Referral	4.0	Low	3472.93	
+47	2026-06-26	June	Q2	35	Male	East	99021	Bronze	6	6	115.41	Yes	Direct	4.6	Low	2562.38	
+48	2026-09-04	September	Q3	64	Male	North	125563	Silver	9	6	137.43	Yes	Social Media	4.5	Low	3269.02	
+49	2026-08-28	August	Q3	56	Male	East	52702	Bronze	13	8	75.13	Yes	Referral	2.6	High	1399.03	
+50	2026-02-27	February	Q1	23	Male	South	80430	Bronze	7	6	238.0	Yes	Direct	4.5	Low	6738.96	
+51	2026-07-12	July	Q3	20	Male	East	102399	Bronze	10	6	136.71	Yes	Direct	3.7	Medium	2936.06	
+52	2026-04-17	April	Q2	34	Female	North	124178	Gold	10	7	142.39	Yes	Social Media	3.7	Medium	3353.95	
+53	2026-08-07	August	Q3	50	Male	South	125266	Bronze	9	5	90.26	No	Email	3.5	Medium	1820.84	
+54	2026-09-12	September	Q3	57	Male	East	98146	Bronze	6	7	160.69	Yes	Email	4.8	Low	5210.04	
+55	2026-11-07	November	Q4	66	Male	North	47649	Bronze	6	5	185.49	Yes	Referral	4.8	Low	4881.83	
+56	2026-10-12	October	Q4	24	Male	South	95801	Bronze	8	7	116.76	Yes	Social Media	3.2	Medium	3453.73	
+57	2026-04-09	April	Q2	53	Female	North	143377	Bronze	7	6	119.23	No	Social Media	3.1	Medium	2013.45	
+58	2026-05-02	May	Q2	59	Male	West	41619	Bronze	8	6	119.61	No	Direct	4.4	Low	4009.11	
+59	2026-09-24	September	Q3	61	Female	West	28674	Silver	3	2	168.46	Yes	Email	4.1	High	786.38	
+60	2026-05-25	May	Q2	53	Male	South	119971	Gold	6	4	183.88	Yes	Referral	4.2	Medium	3684.25	
+61	2026-07-21	July	Q3	43	Male	North	25852	Bronze	1	1	86.57	No	Direct	4.5	High	316.27	
+62	2026-02-05	February	Q1	23	Female	North	96073	Silver	12	8	142.51	No	Social Media	3.2	Medium	5667.02	
+63	2026-11-18	November	Q4	22	Male	South	42334	Silver	6	7	175.58	Yes	Email	3.9	Medium	4584.07	
+64	2026-04-25	April	Q2	55	Female	North	116051	Gold	7	6	76.65	No	Email	4.7	Low	2180.23	
+65	2026-12-11	December	Q4	45	Male	North	126731	Bronze	10	8	148.27	Yes	Referral	3.4	Medium	4281.49	
+66	2026-05-31	May	Q2	56	Female	South	105067	Gold	11	7	143.93	No	Social Media	3.5	Medium	4679.46	
+67	2026-01-14	January	Q1	49	Male	West	59888	Platinum	4	4	234.86	No	Email	3.2	Medium	4357.49	
+68	2026-08-27	August	Q3	34	Male	North	74193	Bronze	2	2	89.01	Yes	Referral	4.0	High	493.62	
+69	2026-01-03	January	Q1	67	Male	North	55250	Bronze	4	4	44.47	Yes	Email	3.9	Medium	731.41	
+70	2026-11-26	November	Q4	36	Female	North	54440	Bronze	9	5	150.0	Yes	Email	3.9	Medium	4186.76	
+71	2026-11-20	November	Q4	56	Female	West	96223	Bronze	11	10	113.76	No	Direct	3.5	Medium	4159.15	
+72	2026-01-08	January	Q1	21	Male	North	86641	Bronze	4	5	172.21	Yes	Referral	4.0	Low	3066.53	
+73	2026-03-18	March	Q1	64	Male	South	108683	Bronze	5	5	104.51	No	Referral	3.8	Medium	1903.04	
+74	2026-06-27	June	Q2	51	Female	West	33914	Silver	9	7	100.08	Yes	Referral	3.1	Medium	2598.23	
+75	2026-07-29	July	Q3	53	Male	South	70031	Platinum	11	8	226.29	No	Direct	4.5	Low	11257.1	
+76	2026-01-19	January	Q1	58	Male	South	138057	Silver	4	4	136.73	No	Direct	4.4	Medium	2366.53	
+77	2026-05-17	May	Q2	40	Male	South	92249	Bronze	10	8	95.95	No	Referral	4.3	Low	4187.66	
+78	2026-12-18	December	Q4	68	Male	South	32698	Bronze	8	7	245.09	No	Direct	4.2	Low	10611.09	
+79	2026-07-18	July	Q3	62	Male	South	121386	Gold	11	10	168.71	No	Direct	3.6	Medium	8878.81	
+80	2026-03-02	March	Q1	44	Female	North	141469	Silver	7	6	177.09	No	Social Media	4.0	Low	5963.82	
+81	2026-10-13	October	Q4	31	Female	East	84288	Gold	15	10	178.23	No	Social Media	3.3	Medium	6809.27	
+82	2026-08-30	August	Q3	38	Female	North	91025	Bronze	2	3	212.26	No	Email	4.5	Medium	3154.76	
+83	2026-09-09	September	Q3	56	Female	South	112382	Gold	12	8	81.5	No	Social Media	3.3	Medium	3061.5	
+84	2026-11-04	November	Q4	30	Male	East	120314	Bronze	8	6	195.35	Yes	Email	4.9	Low	6024.57	
+85	2026-02-25	February	Q1	28	Male	North	57695	Bronze	6	7	125.54	No	Referral	3.3	Medium	2865.78	
+86	2026-05-11	May	Q2	25	Male	West	32648	Silver	6	7	131.54	Yes	Referral	3.5	Medium	4075.49	
+87	2026-08-25	August	Q3	62	Male	South	80826	Platinum	9	7	111.53	Yes	Email	4.3	Low	4850.04	
+88	2026-01-14	January	Q1	69	Male	South	62097	Silver	5	6	220.04	No	Email	3.4	Medium	5765.3	
+89	2026-10-28	October	Q4	61	Male	North	98465	Gold	11	8	108.68	Yes	Direct	3.9	Medium	4448.59	
+90	2026-01-10	January	Q1	20	Female	South	54934	Silver	7	7	144.27	No	Email	4.6	Low	5102.52	
+91	2026-10-03	October	Q4	35	Male	South	41704	Platinum	16	9	186.54	No	Email	3.4	Medium	9806.18	
+92	2026-04-12	April	Q2	44	Female	North	112100	Bronze	4	4	173.38	No	Social Media	3.7	Medium	1843.27	
+93	2026-04-22	April	Q2	31	Male	South	83722	Bronze	4	3	115.05	No	Email	3.5	Medium	880.79	
+94	2026-08-18	August	Q3	68	Female	West	44233	Gold	8	10	118.56	No	Referral	3.8	Medium	4844.93	
+95	2026-01-19	January	Q1	48	Female	North	144981	Bronze	7	5	116.37	No	Email	3.9	Medium	2089.71	
+96	2026-12-23	December	Q4	48	Female	East	112291	Platinum	13	13	225.66	No	Direct	4.5	Low	29925.98	
+97	2026-04-07	April	Q2	30	Male	South	99336	Bronze	5	4	146.2	Yes	Social Media	4.1	Medium	2318.8	
+98	2026-12-16	December	Q4	36	Male	North	92860	Silver	5	6	169.01	No	Social Media	3.3	Medium	6067.6	
+99	2026-12-21	December	Q4	23	Female	North	97511	Bronze	3	3	123.82	Yes	Direct	4.1	Medium	1443.45	
+100	2026-01-02	January	Q1	43	Male	East	128329	Silver	5	6	126.21	No	Email	3.7	Medium	2537.02	
+101	2026-11-01	November	Q4	54	Female	East	72480	Silver	6	6	216.75	No	Referral	4.1	Low	9291.99	
+102	2026-05-25	May	Q2	65	Female	North	51593	Silver	6	7	155.74	Yes	Referral	4.9	Low	6727.92	
+103	2026-05-23	May	Q2	30	Male	North	110647	Gold	11	7	139.15	No	Direct	4.2	Low	5737.32	
+104	2026-06-21	June	Q2	48	Male	West	83464	Gold	14	8	206.08	No	Email	3.2	Medium	6571.95	
+105	2026-02-07	February	Q1	49	Male	East	135831	Bronze	7	6	157.66	No	Referral	4.5	Low	4182.05	
+106	2026-06-11	June	Q2	62	Male	North	107863	Gold	5	4	181.04	No	Social Media	3.8	Medium	3076.79	
+107	2026-03-08	March	Q1	25	Male	West	115875	Gold	9	6	132.88	Yes	Direct	2.5	High	2040.82	
+108	2026-09-22	September	Q3	25	Male	South	145936	Bronze	4	4	138.63	No	Email	3.9	Medium	2151.86	
+109	2026-11-01	November	Q4	59	Male	South	105361	Platinum	11	9	121.58	No	Social Media	3.8	Medium	7233.44	
+110	2026-08-06	August	Q3	55	Female	South	96539	Silver	19	12	118.28	Yes	Social Media	3.5	Medium	5464.5	
+111	2026-04-12	April	Q2	36	Male	North	130533	Bronze	5	4	95.84	Yes	Email	4.1	Medium	1532.38	
+112	2026-10-31	October	Q4	34	Male	East	138271	Platinum	6	7	224.37	No	Social Media	4.9	Low	10612.81	
+113	2026-09-28	September	Q3	47	Female	West	36162	Bronze	13	8	42.46	No	Referral	3.2	Medium	1041.5	
+114	2026-02-11	February	Q1	32	Male	North	78050	Bronze	9	6	115.23	No	Social Media	3.1	Medium	2070.09	
+115	2026-03-02	March	Q1	30	Female	North	96140	Bronze	6	7	114.39	Yes	Social Media	4.4	Low	3162.66	
+116	2026-02-07	February	Q1	19	Male	North	99730	Silver	10	8	187.07	No	Social Media	4.5	Low	7519.21	
+117	2026-08-04	August	Q3	51	Female	West	118324	Platinum	12	8	199.02	No	Referral	3.9	Medium	7135.91	
+118	2026-02-16	February	Q1	50	Male	East	51213	Bronze	12	8	154.82	No	Social Media	3.2	Medium	4037.17	
+119	2026-11-04	November	Q4	53	Female	West	64295	Silver	19	12	180.11	Yes	Referral	3.5	Medium	11163.09	
+120	2026-03-17	March	Q1	30	Female	East	118834	Silver	5	6	125.83	No	Direct	4.9	Low	3603.89	
+121	2026-06-29	June	Q2	46	Male	North	73054	Bronze	5	6	112.33	No	Referral	3.9	Medium	3050.14	
+122	2026-12-09	December	Q4	64	Male	South	47077	Silver	11	8	196.4	No	Email	3.0	Medium	6009.99	
+123	2026-10-26	October	Q4	27	Male	North	108719	Gold	7	6	171.47	No	Email	3.8	Medium	5062.71	
+124	2026-05-30	May	Q2	52	Male	East	121726	Bronze	5	3	124.01	No	Direct	4.1	Medium	1551.15	
+125	2026-12-25	December	Q4	19	Female	South	29127	Gold	15	9	184.74	No	Social Media	4.0	Low	14329.22	
+126	2026-06-14	June	Q2	54	Female	North	136579	Gold	12	7	191.93	Yes	Social Media	4.7	Low	10332.68	
+127	2026-07-13	July	Q3	37	Male	West	58116	Gold	11	7	182.48	No	Email	3.3	Medium	7146.89	
+128	2026-02-28	February	Q1	18	Male	West	41349	Platinum	14	10	202.89	No	Social Media	4.4	Low	16905.2	
+129	2026-02-24	February	Q1	69	Male	East	50672	Bronze	8	6	120.64	No	Referral	3.2	Medium	3329.19	
+130	2026-09-03	September	Q3	41	Male	North	55941	Silver	5	5	145.31	No	Direct	3.4	Medium	2668.37	
+131	2026-12-09	December	Q4	28	Female	West	94877	Gold	17	13	138.1	Yes	Email	5.0	Low	13876.5	
+132	2026-11-11	November	Q4	54	Female	East	103150	Bronze	7	5	131.63	No	Social Media	3.2	Medium	2378.38	
+133	2026-11-10	November	Q4	53	Male	South	132407	Bronze	14	8	180.07	No	Social Media	4.4	Low	8690.27	
+134	2026-07-25	July	Q3	69	Female	North	29229	Bronze	8	6	232.91	Yes	Email	3.1	Medium	4059.76	
+135	2026-12-29	December	Q4	30	Male	North	40466	Gold	8	9	216.62	No	Referral	3.5	Medium	10604.93	
+136	2026-07-19	July	Q3	29	Male	North	126415	Bronze	5	6	150.69	No	Email	4.1	Low	4557.4	
+137	2026-05-13	May	Q2	28	Male	North	67216	Silver	3	2	113.77	Yes	Social Media	3.3	High	456.66	
+138	2026-08-15	August	Q3	46	Female	West	83703	Bronze	6	6	156.57	Yes	Social Media	2.9	High	2135.46	
+139	2026-06-30	June	Q2	43	Female	West	142460	Bronze	5	4	109.08	Yes	Referral	4.2	Medium	1913.98	
+140	2026-11-11	November	Q4	68	Male	East	82910	Silver	12	9	187.6	Yes	Direct	3.9	Medium	6427.22	
+141	2026-03-03	March	Q1	63	Female	South	91561	Bronze	5	3	116.49	No	Email	2.9	High	829.14	
+142	2026-03-21	March	Q1	21	Female	East	96056	Silver	10	6	146.06	No	Social Media	2.9	High	2301.77	
+143	2026-10-12	October	Q4	23	Female	North	94220	Gold	7	8	181.7	No	Referral	3.5	Medium	7418.17	
+144	2026-09-14	September	Q3	64	Female	West	99055	Bronze	8	7	144.45	Yes	Referral	4.2	Low	4000.49	
+145	2026-09-06	September	Q3	52	Male	South	148432	Silver	14	8	156.74	No	Referral	3.8	Medium	5181.12	
+146	2026-09-29	September	Q3	46	Male	North	149444	Bronze	10	6	100.93	No	Social Media	3.6	Medium	2361.31	
+147	2026-05-03	May	Q2	55	Female	West	109481	Platinum	12	7	201.69	Yes	Direct	4.3	Low	11211.07	
+148	2026-03-13	March	Q1	30	Female	East	146051	Bronze	8	6	131.03	Yes	Social Media	2.7	High	1680.43	
+149	2026-06-30	June	Q2	27	Female	East	122795	Platinum	8	5	267.01	No	Direct	3.7	Medium	5913.16	
+150	2026-04-08	April	Q2	20	Male	South	35791	Silver	6	5	118.95	No	Referral	3.4	Medium	1614.98	
+151	2026-11-13	November	Q4	65	Female	South	135692	Bronze	6	5	188.56	No	Email	4.0	Low	5144.39	
+152	2026-09-23	September	Q3	60	Male	East	114864	Silver	6	4	132.65	No	Email	3.2	Medium	2248.48	
+153	2026-12-18	December	Q4	36	Male	West	137962	Platinum	13	14	217.56	Yes	Direct	3.1	Medium	15588.05	
+154	2026-04-28	April	Q2	33	Male	North	49572	Bronze	2	3	89.81	No	Social Media	3.3	Medium	838.47	
+155	2026-05-29	May	Q2	38	Female	North	105313	Gold	8	5	215.58	No	Direct	3.1	Medium	5330.63	
+156	2026-05-28	May	Q2	20	Female	North	128909	Silver	3	3	189.94	No	Social Media	3.2	Medium	1566.44	
+157	2026-06-24	June	Q2	63	Male	East	62062	Bronze	5	6	86.31	No	Social Media	3.7	Medium	1996.21	
+158	2026-10-01	October	Q4	39	Female	East	67796	Silver	4	4	209.7	Yes	Social Media	2.6	High	1792.47	
+159	2026-05-04	May	Q2	28	Male	North	34886	Bronze	6	5	144.26	No	Direct	2.7	High	1571.95	
+160	2026-02-22	February	Q1	44	Female	East	77927	Silver	7	8	92.5	No	Referral	3.3	Medium	2503.91	
+161	2026-09-02	September	Q3	24	Female	West	113891	Gold	5	3	242.95	Yes	Direct	4.0	Medium	2446.72	
+162	2026-09-16	September	Q3	63	Male	North	108419	Silver	7	7	156.03	No	Direct	4.1	Low	6363.33	
+163	2026-11-24	November	Q4	32	Male	South	33305	Bronze	18	11	143.85	No	Social Media	3.8	Medium	5375.97	
+164	2026-10-06	October	Q4	19	Male	North	148212	Silver	10	7	128.78	No	Social Media	4.9	Low	5779.36	
+165	2026-03-11	March	Q1	34	Male	West	124705	Bronze	10	7	98.17	Yes	Direct	2.9	High	1469.07	
+166	2026-01-09	January	Q1	43	Male	East	136401	Bronze	1	1	88.77	No	Email	3.2	High	172.68	
+167	2026-10-12	October	Q4	22	Female	East	98370	Silver	10	6	139.43	No	Social Media	2.8	High	2294.07	
+168	2026-07-31	July	Q3	29	Female	West	110341	Bronze	8	5	171.38	Yes	Direct	4.2	Low	3672.96	
+169	2026-06-22	June	Q2	50	Male	North	80465	Silver	7	6	144.85	Yes	Email	3.6	Medium	3260.81	
+170	2026-07-18	July	Q3	59	Male	West	118247	Silver	14	11	133.65	Yes	Referral	3.0	Medium	6074.92	
+171	2026-06-16	June	Q2	46	Male	North	59875	Silver	7	6	171.68	Yes	Social Media	3.6	Medium	2948.67	
+172	2026-10-02	October	Q4	59	Female	South	76526	Silver	10	6	153.81	No	Direct	3.6	Medium	3355.98	
+173	2026-04-05	April	Q2	31	Female	North	97060	Silver	10	6	139.91	Yes	Referral	3.8	Medium	3022.54	
+174	2026-07-13	July	Q3	42	Female	South	105933	Silver	10	6	110.88	No	Email	4.0	Low	2785.52	
+175	2026-06-21	June	Q2	18	Female	North	52430	Bronze	9	7	90.12	No	Referral	4.1	Low	2516.87	
+176	2026-01-01	January	Q1	61	Female	West	32665	Silver	9	6	148.41	No	Email	3.7	Medium	3983.39	
+177	2026-01-25	January	Q1	68	Male	East	70514	Silver	5	6	132.12	No	Social Media	3.5	Medium	3406.06	
+178	2026-08-16	August	Q3	65	Female	West	40243	Silver	6	6	92.78	Yes	Email	3.4	Medium	2568.74	
+179	2026-05-31	May	Q2	70	Male	South	108273	Silver	6	4	145.99	No	Direct	4.5	Medium	2572.69	
+180	2026-04-16	April	Q2	49	Female	West	119797	Silver	8	9	187.44	Yes	Direct	3.0	Medium	5624.33	
+181	2026-04-23	April	Q2	40	Female	West	68460	Bronze	4	2	97.82	Yes	Direct	4.6	High	401.15	
+182	2026-10-27	October	Q4	31	Female	South	80675	Silver	10	8	122.94	No	Email	4.0	Low	5655.11	
+183	2026-03-19	March	Q1	29	Male	North	68351	Bronze	8	7	149.46	No	Social Media	4.3	Low	4698.02	
+184	2026-05-22	May	Q2	66	Female	West	31723	Bronze	9	5	124.97	No	Email	4.6	Low	2825.18	
+185	2026-08-19	August	Q3	60	Female	West	112493	Silver	10	7	150.92	Yes	Social Media	3.7	Medium	3550.46	
+186	2026-10-03	October	Q4	40	Female	East	133589	Bronze	3	2	134.13	Yes	Referral	3.9	High	636.26	
+187	2026-12-17	December	Q4	29	Male	East	104043	Bronze	10	10	194.59	Yes	Direct	3.6	Medium	8969.29	
+188	2026-05-23	May	Q2	23	Male	South	120445	Gold	4	4	167.39	No	Direct	3.9	Medium	2903.84	
+189	2026-07-17	July	Q3	54	Male	West	125817	Platinum	11	9	125.16	No	Email	4.3	Low	7842.68	
+190	2026-06-29	June	Q2	45	Female	South	132227	Silver	10	9	68.49	No	Direct	4.7	Low	2639.23	
+191	2026-11-26	November	Q4	31	Female	North	33772	Gold	9	8	184.67	No	Social Media	3.3	Medium	6094.25	
+192	2026-01-10	January	Q1	43	Male	East	53254	Gold	9	8	137.15	No	Direct	4.5	Low	7311.05	
+193	2026-02-23	February	Q1	45	Male	South	123475	Gold	4	3	155.11	No	Social Media	4.3	Medium	2085.47	
+194	2026-10-18	October	Q4	50	Female	North	128528	Bronze	12	8	155.02	Yes	Email	3.7	Medium	5554.32	
+195	2026-12-18	December	Q4	59	Female	East	96419	Platinum	22	14	166.99	No	Referral	3.6	Medium	16043.23	
+196	2026-11-04	November	Q4	59	Female	West	51867	Silver	9	6	113.86	No	Email	3.3	Medium	3226.46	
+197	2026-10-20	October	Q4	67	Female	West	31077	Silver	8	6	164.96	Yes	Email	3.7	Medium	4554.14	
+198	2026-04-06	April	Q2	27	Male	South	50195	Bronze	8	5	113.31	No	Email	4.2	Low	1983.71	
+199	2026-03-17	March	Q1	64	Male	South	108923	Silver	16	10	115.99	No	Direct	2.9	High	3318.53	
+200	2026-03-11	March	Q1	39	Female	South	58689	Bronze	12	7	125.25	Yes	Referral	3.7	Medium	2279.24	
+201	2026-03-26	March	Q1	27	Female	North	27149	Bronze	7	6	72.5	Yes	Social Media	3.8	Medium	1716.47	
+202	2026-07-09	July	Q3	40	Female	North	86664	Bronze	5	6	125.57	No	Email	4.2	Low	3982.0	
+203	2026-01-20	January	Q1	42	Female	West	127725	Bronze	3	3	77.56	No	Social Media	3.7	Medium	697.52	
+204	2026-07-28	July	Q3	51	Female	South	81937	Gold	12	8	202.62	Yes	Referral	3.7	Medium	8413.52	
+205	2026-09-05	September	Q3	43	Female	West	147680	Bronze	4	4	207.6	Yes	Social Media	3.2	Medium	2836.75	
+206	2026-01-18	January	Q1	36	Male	West	66841	Silver	3	3	104.74	Yes	Referral	3.6	Medium	1232.79	
+207	2026-01-07	January	Q1	66	Female	West	132176	Bronze	3	4	147.28	No	Email	3.8	Medium	2009.85	
+208	2026-08-08	August	Q3	53	Female	South	126554	Gold	10	6	90.41	Yes	Social Media	2.3	High	1862.17	
+209	2026-06-29	June	Q2	27	Female	South	102789	Silver	8	5	146.9	No	Referral	3.4	Medium	3067.64	
+210	2026-03-19	March	Q1	33	Female	West	98782	Platinum	12	7	170.33	No	Email	3.3	Medium	6520.56	
+211	2026-05-30	May	Q2	18	Female	South	60648	Bronze	9	6	138.83	Yes	Email	4.1	Low	4404.94	
+212	2026-10-12	October	Q4	31	Male	East	74338	Bronze	6	6	190.94	No	Email	3.8	Medium	3754.49	
+213	2026-03-31	March	Q1	50	Female	West	34841	Gold	8	5	178.7	No	Email	3.5	Medium	3829.54	
+214	2026-12-20	December	Q4	23	Female	West	86102	Bronze	10	8	225.77	Yes	Social Media	3.9	Medium	7372.53	
+215	2026-07-05	July	Q3	62	Male	South	84542	Silver	14	9	129.82	Yes	Social Media	3.2	Medium	4233.36	
+216	2026-06-21	June	Q2	31	Male	East	120593	Bronze	4	4	133.33	No	Referral	4.1	Medium	1896.94	
+217	2026-10-01	October	Q4	63	Male	North	32694	Silver	10	6	184.2	No	Referral	4.5	Low	4916.71	
+218	2026-11-09	November	Q4	49	Female	North	101396	Platinum	12	12	249.71	No	Direct	4.7	Low	27556.73	
+219	2026-12-22	December	Q4	70	Female	North	34781	Gold	20	12	230.98	Yes	Direct	3.3	Medium	12583.69	
+220	2026-08-27	August	Q3	53	Female	East	117400	Platinum	10	10	217.4	No	Email	2.3	High	7069.45	
+221	2026-09-20	September	Q3	48	Female	North	131614	Bronze	8	6	44.93	No	Email	4.3	Low	1179.8	
+222	2026-06-26	June	Q2	55	Male	North	40354	Bronze	5	6	110.97	No	Social Media	3.7	Medium	2008.16	
+223	2026-06-20	June	Q2	24	Female	North	45083	Bronze	9	7	172.66	No	Email	3.5	Medium	4764.18	
+224	2026-03-22	March	Q1	56	Male	West	28436	Gold	9	7	153.62	No	Referral	3.5	Medium	3353.69	
+225	2026-12-19	December	Q4	49	Male	East	126120	Gold	15	11	217.79	No	Referral	4.4	Low	24583.39	
+226	2026-08-08	August	Q3	67	Female	North	129077	Silver	9	6	141.93	No	Social Media	3.4	Medium	4182.87	
+227	2026-05-02	May	Q2	40	Female	West	84671	Silver	5	5	98.66	No	Direct	3.1	Medium	2049.49	
+228	2026-06-25	June	Q2	20	Female	South	127547	Bronze	6	5	156.74	Yes	Direct	3.4	Medium	2855.98	
+229	2026-05-01	May	Q2	64	Female	North	28843	Gold	9	9	161.03	No	Social Media	3.2	Medium	6204.39	
+230	2026-04-19	April	Q2	26	Male	South	96881	Gold	9	7	131.0	No	Direct	3.4	Medium	3421.07	
+231	2026-03-19	March	Q1	33	Male	West	32854	Platinum	12	11	142.9	No	Referral	3.9	Medium	9224.38	
+232	2026-01-16	January	Q1	33	Female	South	104644	Bronze	3	3	144.15	Yes	Direct	4.2	Medium	1668.35	
+233	2026-10-23	October	Q4	50	Female	North	113704	Gold	14	8	162.01	Yes	Email	3.1	Medium	4741.94	
+234	2026-06-24	June	Q2	57	Female	South	61830	Gold	7	5	139.19	Yes	Email	2.9	High	2246.11	
+235	2026-05-18	May	Q2	27	Female	North	99887	Silver	3	3	96.65	No	Social Media	3.4	Medium	1332.43	
+236	2026-09-04	September	Q3	37	Male	East	59064	Silver	6	6	122.55	No	Direct	4.5	Low	3073.84	
+237	2026-10-08	October	Q4	69	Male	South	45395	Bronze	5	5	84.61	Yes	Email	2.7	High	761.82	
+238	2026-05-02	May	Q2	47	Female	North	71376	Silver	10	6	60.06	No	Social Media	2.9	High	722.87	
+239	2026-03-28	March	Q1	60	Female	East	93579	Silver	2	2	108.48	No	Direct	4.9	High	752.47	
+240	2026-10-06	October	Q4	30	Male	East	88289	Silver	5	4	144.82	Yes	Social Media	4.9	Medium	3054.98	
+241	2026-04-27	April	Q2	54	Male	North	52717	Gold	4	3	155.54	Yes	Email	4.3	Medium	1592.55	
+242	2026-01-14	January	Q1	54	Male	South	128201	Bronze	2	2	142.74	Yes	Referral	5	High	697.46	
+243	2026-05-05	May	Q2	18	Female	West	90984	Bronze	14	9	91.75	No	Email	3.2	Medium	2786.55	
+244	2026-05-29	May	Q2	50	Male	East	103751	Silver	6	7	129.62	Yes	Social Media	3.8	Medium	2847.8	
+245	2026-10-31	October	Q4	38	Male	North	27609	Bronze	11	7	152.82	Yes	Email	3.6	Medium	4136.24	
+246	2026-06-29	June	Q2	60	Female	East	57474	Gold	13	8	137.36	No	Referral	4.5	Low	6040.42	
+247	2026-01-04	January	Q1	66	Male	North	146908	Gold	8	9	180.36	No	Referral	3.9	Medium	7610.46	
+248	2026-01-24	January	Q1	37	Female	South	60073	Bronze	8	7	107.77	No	Social Media	3.2	Medium	2428.87	
+249	2026-08-29	August	Q3	18	Female	South	72958	Silver	8	5	130.42	Yes	Social Media	3.9	Medium	3015.19	
+250	2026-05-13	May	Q2	29	Female	South	139103	Silver	12	7	69.56	No	Social Media	3.6	Medium	1847.14	
+251	2026-12-17	December	Q4	47	Female	North	146027	Bronze	17	10	160.75	No	Social Media	3.2	Medium	6582.95	
+252	2026-11-26	November	Q4	46	Female	East	77423	Gold	11	9	203.0	No	Referral	3.0	Medium	8060.82	
+253	2026-11-24	November	Q4	35	Male	South	34383	Bronze	20	11	142.9	No	Direct	4.4	Low	11484.9	
+254	2026-01-04	January	Q1	66	Female	South	25787	Silver	5	5	109.64	Yes	Direct	3.9	Medium	2504.03	
+255	2026-02-18	February	Q1	30	Female	West	47945	Gold	7	7	183.89	No	Referral	4.7	Low	9661.56	
+256	2026-12-21	December	Q4	37	Female	North	113808	Gold	11	8	271.7	No	Direct	4.2	Low	22038.29	
+257	2026-01-30	January	Q1	18	Female	South	148853	Bronze	5	5	122.1	No	Email	3.4	Medium	1940.75	
+258	2026-01-28	January	Q1	26	Male	East	129096	Bronze	5	5	111.68	Yes	Direct	4.0	Low	1713.17	
+259	2026-06-20	June	Q2	49	Male	West	44971	Bronze	5	4	132.75	Yes	Social Media	4.0	Medium	2444.77	
+260	2026-07-20	July	Q3	38	Female	West	82344	Bronze	9	6	97.94	No	Social Media	2.1	High	1334.39	
+261	2026-01-27	January	Q1	67	Male	West	59468	Bronze	11	6	150.11	No	Direct	2.8	High	2196.51	
+262	2026-01-18	January	Q1	21	Female	North	101263	Gold	10	10	185.83	No	Referral	3.8	Medium	7649.19	
+263	2026-11-08	November	Q4	53	Male	South	72991	Bronze	5	4	118.74	Yes	Email	3.8	Medium	2039.78	
+264	2026-11-11	November	Q4	36	Female	East	96124	Gold	10	11	224.13	No	Social Media	3.7	Medium	12187.12	
+265	2026-02-19	February	Q1	40	Female	South	69093	Bronze	4	4	46.06	No	Referral	2.7	High	539.08	
+266	2026-11-16	November	Q4	38	Female	West	49869	Silver	8	5	191.49	No	Referral	3.9	Medium	5262.74	
+267	2026-07-18	July	Q3	24	Female	East	62511	Gold	11	7	153.26	No	Direct	4.0	Low	7433.39	
+268	2026-05-30	May	Q2	40	Male	North	91071	Gold	11	7	190.03	No	Social Media	3.8	Medium	5579.26	
+269	2026-02-15	February	Q1	35	Female	East	32153	Gold	14	8	198.12	Yes	Email	3.9	Medium	6212.62	
+270	2026-09-22	September	Q3	30	Female	East	119402	Bronze	5	4	73.72	Yes	Direct	4.3	Medium	773.81	
+271	2026-10-28	October	Q4	24	Male	East	122114	Bronze	4	4	117.25	No	Direct	3.8	Medium	1531.52	
+272	2026-01-18	January	Q1	53	Male	South	54348	Silver	7	6	170.67	No	Social Media	4.2	Low	3747.86	
+273	2026-01-05	January	Q1	63	Female	West	59042	Bronze	6	5	34.83	No	Referral	4.2	Low	565.59	
+274	2026-08-06	August	Q3	41	Female	West	145156	Bronze	8	9	92.93	No	Referral	4.6	Low	3616.15	
+275	2026-08-14	August	Q3	20	Male	North	84856	Platinum	7	6	223.34	Yes	Email	3.2	Medium	7842.59	
+276	2026-12-09	December	Q4	51	Male	North	92465	Gold	17	11	178.14	No	Referral	4.0	Low	15134.84	
+277	2026-07-31	July	Q3	19	Female	South	85709	Bronze	5	5	127.93	Yes	Social Media	4.0	Low	2372.37	
+278	2026-01-26	January	Q1	21	Female	West	101788	Bronze	5	3	121.53	No	Social Media	2.6	High	641.99	
+279	2026-06-11	June	Q2	25	Female	South	129774	Bronze	7	5	133.1	No	Direct	3.5	Medium	2733.38	
+280	2026-07-21	July	Q3	23	Female	West	135183	Silver	9	9	79.83	Yes	Email	4.5	Low	4936.97	
+281	2026-09-24	September	Q3	44	Male	South	67165	Bronze	8	5	98.1	No	Referral	4.1	Low	1644.05	
+282	2026-06-29	June	Q2	44	Female	West	148425	Bronze	4	5	61.36	No	Email	3.9	Medium	1066.99	
+283	2026-02-10	February	Q1	47	Male	North	107309	Silver	10	7	151.35	No	Direct	3.7	Medium	5736.79	
+284	2026-09-27	September	Q3	69	Male	South	35565	Silver	8	7	154.16	Yes	Referral	3.4	Medium	2803.88	
+285	2026-03-14	March	Q1	52	Female	South	145925	Silver	5	3	160.77	No	Social Media	4.5	Medium	1669.64	
+286	2026-01-03	January	Q1	67	Male	North	38549	Gold	5	5	118.83	No	Referral	4.2	Low	3869.21	
+287	2026-08-27	August	Q3	61	Female	North	76380	Silver	6	4	81.25	No	Social Media	3.7	Medium	1388.34	
+288	2026-07-22	July	Q3	40	Female	South	92506	Bronze	7	7	152.53	No	Referral	4.4	Low	6173.19	
+289	2026-11-22	November	Q4	63	Female	West	43552	Platinum	13	8	164.15	Yes	Social Media	4.3	Low	11302.99	
+290	2026-09-26	September	Q3	51	Male	North	50834	Gold	10	7	138.24	No	Social Media	3.9	Medium	4578.44	
+291	2026-06-19	June	Q2	24	Female	West	49973	Bronze	10	6	97.86	No	Email	4.0	Low	2994.26	
+292	2026-08-30	August	Q3	34	Male	South	139657	Bronze	11	8	100.33	No	Referral	4.0	Low	3862.54	
+293	2026-09-03	September	Q3	59	Female	South	122240	Silver	3	3	74.13	No	Email	4.0	Medium	703.63	
+294	2026-04-06	April	Q2	31	Female	East	112330	Bronze	10	8	174.78	Yes	Social Media	3.6	Medium	3130.29	
+295	2026-07-15	July	Q3	28	Male	South	146115	Gold	18	10	168.73	Yes	Direct	5	Low	13453.19	
+296	2026-11-11	November	Q4	45	Female	East	27885	Bronze	11	9	179.92	No	Referral	4.9	Low	9028.61	
+297	2026-06-05	June	Q2	24	Female	South	113681	Bronze	3	4	119.64	No	Referral	3.3	Medium	1914.59	
+298	2026-05-28	May	Q2	32	Male	North	88751	Bronze	12	8	145.07	No	Social Media	4.6	Low	4830.98	
+299	2026-12-14	December	Q4	48	Female	West	90419	Bronze	6	8	152.47	Yes	Email	3.6	Medium	6239.43	
+300	2026-05-07	May	Q2	66	Male	North	86598	Silver	8	6	140.25	No	Email	4.0	Low	4249.41	
+301	2026-02-28	February	Q1	51	Male	South	31470	Bronze	14	9	146.07	No	Social Media	4.7	Low	8082.17	
+302	2026-10-31	October	Q4	45	Male	West	115849	Bronze	6	6	99.56	No	Email	4.9	Low	3494.94	
+303	2026-03-12	March	Q1	38	Female	East	121011	Bronze	4	3	125.61	No	Referral	3.7	Medium	1413.6	
+304	2026-07-02	July	Q3	40	Female	South	88976	Bronze	3	2	109.44	No	Referral	4.8	High	622.08	
+305	2026-11-03	November	Q4	66	Male	South	114140	Silver	6	8	146.05	Yes	Email	4.0	Low	7619.66	
+306	2026-07-01	July	Q3	45	Female	West	68812	Silver	16	9	214.73	Yes	Referral	4.5	Low	13166.98	
+307	2026-09-01	September	Q3	55	Male	South	142546	Silver	6	4	127.12	No	Referral	4.0	Medium	2428.36	
+308	2026-11-25	November	Q4	34	Male	South	72160	Gold	12	11	143.98	No	Direct	4.6	Low	13323.61	
+309	2026-08-10	August	Q3	29	Male	East	140216	Gold	17	10	195.09	No	Social Media	4.3	Low	12668.81	
+310	2026-01-29	January	Q1	38	Male	East	131500	Gold	5	6	109.5	Yes	Email	3.3	Medium	2783.91	
+311	2026-12-25	December	Q4	35	Female	North	28974	Gold	12	12	213.91	No	Direct	4.1	Low	18940.0	
+312	2026-12-24	December	Q4	55	Male	West	44463	Bronze	14	10	178.09	Yes	Direct	4.5	Low	9686.14	
+313	2026-12-15	December	Q4	60	Male	West	124913	Silver	14	10	147.48	No	Referral	3.5	Medium	7003.72	
+314	2026-01-12	January	Q1	61	Male	West	117974	Gold	9	7	189.62	No	Referral	3.2	Medium	5379.99	
+315	2026-06-23	June	Q2	31	Male	West	99116	Silver	4	3	137.47	Yes	Referral	2.9	High	811.08	
+316	2026-11-16	November	Q4	24	Male	South	85413	Gold	8	7	197.61	No	Direct	3.5	Medium	9122.36	
+317	2026-04-06	April	Q2	63	Male	West	138403	Bronze	7	5	110.11	Yes	Direct	3.3	Medium	1657.12	
+318	2026-07-27	July	Q3	64	Female	North	109489	Bronze	7	7	47.68	No	Referral	3.6	Medium	1262.62	
+319	2026-10-21	October	Q4	18	Male	North	40892	Silver	6	5	169.5	Yes	Direct	4.5	Low	5691.49	
+320	2026-02-28	February	Q1	29	Male	East	85918	Bronze	6	6	130.25	No	Referral	3.5	Medium	3275.97	
+321	2026-05-29	May	Q2	46	Female	North	81908	Bronze	2	2	141.17	No	Referral	2.9	High	813.36	
+322	2026-07-20	July	Q3	28	Female	East	49532	Silver	11	7	107.54	No	Referral	5	Low	4570.04	
+323	2026-12-02	December	Q4	29	Male	North	79818	Bronze	14	8	131.66	No	Referral	3.7	Medium	4181.8	
+324	2026-04-17	April	Q2	70	Male	West	132535	Bronze	5	4	86.39	Yes	Direct	3.5	Medium	807.85	
+325	2026-06-23	June	Q2	20	Male	West	39711	Bronze	6	6	115.64	No	Email	4.6	Low	2846.84	
+326	2026-05-29	May	Q2	22	Female	West	51185	Bronze	11	7	34.54	No	Direct	3.4	Medium	944.9	
+327	2026-02-20	February	Q1	27	Male	North	121456	Silver	11	7	219.0	No	Social Media	4.5	Low	7320.1	
+328	2026-09-27	September	Q3	33	Female	East	103814	Silver	6	4	124.42	No	Email	3.0	Medium	1388.07	
+329	2026-07-27	July	Q3	70	Female	East	47598	Silver	9	7	235.16	No	Email	2.9	High	5593.31	
+330	2026-12-20	December	Q4	57	Female	South	91991	Silver	10	9	152.83	No	Direct	3.7	Medium	8037.92	
+331	2026-08-13	August	Q3	23	Female	North	45407	Silver	5	4	177.76	No	Email	3.3	Medium	3277.59	
+332	2026-12-26	December	Q4	46	Male	South	132215	Bronze	10	6	160.13	Yes	Referral	4.5	Low	6184.73	
+333	2026-06-08	June	Q2	21	Female	South	144704	Silver	14	8	145.64	No	Email	4.2	Low	6216.48	
+334	2026-04-20	April	Q2	23	Male	North	136949	Silver	13	8	148.66	No	Direct	3.7	Medium	4342.46	
+335	2026-09-18	September	Q3	36	Male	North	85103	Silver	5	5	162.17	No	Direct	3.5	Medium	3789.71	
+336	2026-11-23	November	Q4	40	Female	North	134668	Bronze	11	8	128.34	Yes	Direct	3.0	Medium	3695.88	
+337	2026-02-28	February	Q1	67	Male	North	83271	Silver	5	6	118.95	Yes	Direct	3.8	Medium	2409.93	
+338	2026-10-02	October	Q4	58	Female	East	62936	Silver	8	8	158.47	No	Direct	3.9	Medium	5486.23	
+339	2026-11-25	November	Q4	38	Female	East	33430	Silver	11	10	145.6	No	Direct	2.9	High	3705.98	
+340	2026-07-03	July	Q3	19	Male	West	27917	Silver	7	8	182.2	No	Direct	3.3	Medium	5318.97	
+341	2026-07-25	July	Q3	38	Male	South	95786	Silver	11	7	108.75	No	Referral	4.2	Low	3199.28	
+342	2026-05-14	May	Q2	43	Male	South	147537	Silver	6	6	114.99	No	Referral	4.1	Low	3154.27	
+343	2026-09-30	September	Q3	48	Female	West	32958	Bronze	5	4	160.08	Yes	Social Media	3.6	Medium	2574.56	
+344	2026-09-07	September	Q3	62	Female	East	69400	Bronze	4	3	69.3	Yes	Social Media	3.4	Medium	544.14	
+345	2026-08-12	August	Q3	20	Male	North	76483	Silver	8	6	109.03	No	Direct	4.1	Low	2936.76	
+346	2026-11-11	November	Q4	30	Female	South	123537	Silver	8	8	171.68	Yes	Email	3.0	Medium	6143.59	
+347	2026-07-14	July	Q3	59	Female	West	37409	Bronze	7	4	135.27	No	Email	4.0	Medium	2666.63	
+348	2026-11-14	November	Q4	26	Female	West	34721	Bronze	14	8	100.07	No	Email	4.9	Low	5575.37	
+349	2026-01-07	January	Q1	29	Female	North	80605	Bronze	11	7	191.16	No	Email	3.2	Medium	4580.54	
+350	2026-12-09	December	Q4	63	Male	South	68919	Gold	21	12	214.62	No	Email	4.0	Low	20107.15	
+351	2026-09-28	September	Q3	33	Male	West	38686	Silver	2	2	150.9	Yes	Referral	4.1	High	888.86	
+352	2026-12-25	December	Q4	27	Male	South	100851	Bronze	7	6	217.91	Yes	Social Media	4.3	Low	9156.52	
+353	2026-09-03	September	Q3	39	Female	West	65774	Bronze	10	7	143.9	No	Referral	4.0	Low	3230.43	
+354	2026-06-27	June	Q2	30	Female	West	97048	Silver	5	4	151.73	No	Direct	2.6	High	1180.68	
+355	2026-04-21	April	Q2	52	Male	North	67201	Bronze	4	4	156.66	Yes	Referral	3.8	Medium	1533.09	
+356	2026-11-06	November	Q4	51	Female	East	73624	Silver	8	9	155.18	No	Email	3.8	Medium	8177.21	
+357	2026-10-30	October	Q4	44	Female	East	57732	Bronze	9	5	120.29	No	Referral	3.3	Medium	1728.97	
+358	2026-10-26	October	Q4	20	Male	East	133049	Bronze	7	7	68.72	No	Direct	2.6	High	1104.76	
+359	2026-09-12	September	Q3	66	Female	North	98453	Bronze	13	7	156.45	No	Social Media	3.8	Medium	3330.78	
+360	2026-05-03	May	Q2	20	Female	South	83469	Bronze	5	5	115.71	No	Social Media	4.6	Low	2853.93	
+361	2026-05-10	May	Q2	50	Male	West	66067	Bronze	11	6	101.23	No	Email	2.9	High	1432.38	
+362	2026-12-25	December	Q4	35	Male	West	114603	Platinum	13	10	313.81	No	Social Media	3.6	Medium	26027.16	
+363	2026-11-24	November	Q4	58	Female	West	114575	Bronze	14	8	127.33	No	Social Media	3.6	Medium	3627.01	
+364	2026-07-17	July	Q3	45	Female	North	49206	Silver	8	6	182.09	Yes	Direct	4.2	Low	7097.9	
+365	2026-11-08	November	Q4	35	Female	South	77372	Bronze	8	8	145.22	No	Referral	2.3	High	3153.82	
+366	2026-05-10	May	Q2	59	Male	North	60626	Gold	14	10	115.7	No	Email	3.6	Medium	4216.31	
+367	2026-11-08	November	Q4	30	Female	North	56790	Platinum	12	12	212.96	Yes	Direct	4.9	Low	18774.54	
+368	2026-09-06	September	Q3	69	Male	East	36444	Gold	5	6	174.5	Yes	Email	3.7	Medium	3393.08	
+369	2026-08-22	August	Q3	42	Female	South	26525	Silver	7	6	203.11	No	Email	4.9	Low	6991.68	
+370	2026-11-11	November	Q4	46	Female	North	108248	Silver	16	10	86.18	No	Social Media	4.5	Low	5901.25	
+371	2026-10-09	October	Q4	67	Female	North	126261	Gold	15	9	170.97	Yes	Social Media	4.1	Low	9350.39	
+372	2026-01-01	January	Q1	59	Male	South	28405	Gold	11	7	113.61	No	Email	3.6	Medium	3019.36	
+373	2026-12-10	December	Q4	70	Male	South	30580	Bronze	7	5	129.47	No	Direct	3.1	Medium	2389.57	
+374	2026-12-15	December	Q4	52	Female	East	136558	Silver	11	10	200.4	No	Referral	3.9	Medium	9261.73	
+375	2026-01-10	January	Q1	25	Male	South	59241	Platinum	7	7	138.67	No	Direct	3.7	Medium	4412.53	
+376	2026-01-09	January	Q1	62	Male	South	83646	Gold	10	9	157.06	No	Social Media	3.7	Medium	5261.63	
+377	2026-12-23	December	Q4	23	Female	North	66601	Bronze	6	7	112.92	No	Direct	4.7	Low	4950.61	
+378	2026-08-20	August	Q3	63	Male	West	111531	Silver	7	8	163.4	No	Email	2.8	High	3798.85	
+379	2026-10-28	October	Q4	36	Female	East	86984	Silver	6	6	125.93	No	Referral	5	Low	5011.07	
+380	2026-09-20	September	Q3	33	Male	West	109048	Bronze	5	3	134.7	Yes	Email	4.2	Medium	1466.38	
+381	2026-09-22	September	Q3	62	Male	North	62884	Gold	10	6	97.52	Yes	Direct	3.3	Medium	2036.24	
+382	2026-09-20	September	Q3	47	Female	East	90367	Silver	7	7	115.98	No	Email	4.4	Low	4724.82	
+383	2026-05-06	May	Q2	59	Male	West	83555	Gold	13	8	100.63	Yes	Referral	4.4	Low	5539.21	
+384	2026-10-23	October	Q4	38	Female	South	66627	Silver	8	8	207.61	No	Referral	2.8	High	4973.75	
+385	2026-10-08	October	Q4	44	Female	East	100929	Bronze	7	8	165.6	No	Referral	3.8	Medium	5643.07	
+386	2026-02-14	February	Q1	57	Female	East	37225	Platinum	16	10	279.75	No	Social Media	4.4	Low	20594.17	
+387	2026-12-18	December	Q4	68	Male	South	40422	Gold	8	8	200.88	No	Direct	4.4	Low	13711.2	
+388	2026-07-17	July	Q3	24	Male	West	81718	Silver	6	6	193.13	No	Social Media	5.0	Low	5745.07	
+389	2026-07-09	July	Q3	45	Male	West	118613	Bronze	17	10	151.7	No	Referral	3.9	Medium	4453.44	
+390	2026-04-19	April	Q2	58	Female	West	117001	Bronze	7	4	73.92	No	Social Media	3.2	Medium	694.41	
+391	2026-07-14	July	Q3	64	Female	South	115399	Bronze	10	6	110.4	No	Email	3.2	Medium	2299.64	
+392	2026-08-18	August	Q3	46	Male	North	47992	Gold	6	7	138.43	No	Social Media	4.2	Low	5147.06	
+393	2026-09-26	September	Q3	64	Male	East	41220	Silver	11	6	113.8	No	Direct	3.1	Medium	2470.76	
+394	2026-10-19	October	Q4	52	Female	West	40717	Gold	9	11	144.58	No	Direct	3.4	Medium	9226.08	
+395	2026-06-28	June	Q2	30	Female	East	113266	Silver	4	3	109.68	No	Social Media	3.1	Medium	1388.91	
+396	2026-06-18	June	Q2	44	Female	North	128145	Bronze	8	5	73.47	Yes	Social Media	3.1	Medium	1308.66	
+397	2026-06-16	June	Q2	23	Male	East	30770	Gold	13	8	127.57	No	Referral	3.3	Medium	3402.0	
+398	2026-06-27	June	Q2	41	Female	North	141025	Gold	8	8	148.76	No	Email	3.8	Medium	5571.99	
+399	2026-11-08	November	Q4	62	Female	East	104649	Bronze	9	6	180.0	Yes	Direct	3.8	Medium	5571.78	
+400	2026-04-18	April	Q2	45	Male	East	105298	Bronze	4	5	128.75	Yes	Referral	3.5	Medium	1804.53	
+401	2026-01-28	January	Q1	50	Male	North	106555	Gold	10	10	151.4	Yes	Referral	3.4	Medium	5445.91	
+402	2026-04-06	April	Q2	34	Male	East	42596	Bronze	2	2	170.91	Yes	Email	4.8	High	1136.31	
+403	2026-02-24	February	Q1	52	Male	North	122137	Bronze	6	5	124.34	No	Social Media	3.6	Medium	2866.37	
+404	2026-07-23	July	Q3	47	Female	West	85198	Bronze	6	5	115.12	Yes	Referral	3.6	Medium	2564.34	
+405	2026-03-07	March	Q1	46	Female	North	33877	Bronze	2	2	167.5	No	Referral	3.4	High	849.26	
+406	2026-11-23	November	Q4	53	Male	South	26464	Platinum	13	10	249.55	No	Social Media	4.0	Low	20718.93	
+407	2026-10-24	October	Q4	54	Female	East	73150	Gold	15	10	208.96	No	Direct	3.6	Medium	8472.78	
+408	2026-03-20	March	Q1	70	Male	West	133143	Silver	6	7	95.93	No	Social Media	4.0	Low	3156.59	
+409	2026-04-15	April	Q2	38	Female	West	144037	Silver	7	6	73.6	Yes	Direct	4.1	Low	1616.22	
+410	2026-01-19	January	Q1	65	Female	South	44738	Bronze	4	4	152.44	No	Email	2.8	High	1309.15	
+411	2026-02-23	February	Q1	65	Female	South	118884	Platinum	13	8	220.81	No	Direct	3.5	Medium	11439.12	
+412	2026-04-08	April	Q2	44	Female	West	131432	Platinum	9	6	128.26	No	Direct	4.6	Low	4366.69	
+413	2026-09-30	September	Q3	25	Female	West	58595	Silver	12	7	120.42	No	Email	4.0	Low	3947.37	
+414	2026-08-11	August	Q3	28	Female	South	141820	Bronze	12	9	53.95	No	Email	3.1	Medium	2036.15	
+415	2026-04-11	April	Q2	23	Female	South	62469	Gold	7	5	153.98	Yes	Direct	2.5	High	1920.53	
+416	2026-02-15	February	Q1	31	Female	North	73411	Silver	5	6	166.01	Yes	Direct	3.9	Medium	4413.65	
+417	2026-06-05	June	Q2	32	Female	North	140941	Bronze	12	8	117.35	No	Email	3.3	Medium	2836.6	
+418	2026-10-13	October	Q4	21	Male	South	81530	Bronze	9	8	188.75	No	Social Media	4.6	Low	9779.79	
+419	2026-11-29	November	Q4	47	Female	North	66895	Bronze	6	5	115.38	No	Email	4.2	Low	3575.75	
+420	2026-02-22	February	Q1	41	Male	West	114371	Bronze	9	7	121.04	No	Referral	3.8	Medium	2942.47	
+421	2026-05-30	May	Q2	47	Male	East	57505	Silver	6	4	196.09	No	Email	3.7	Medium	3079.52	
+422	2026-08-05	August	Q3	31	Male	East	115093	Gold	15	11	167.19	No	Email	4.0	Low	10252.09	
+423	2026-07-13	July	Q3	41	Female	South	51423	Bronze	13	8	173.12	No	Email	4.4	Low	6767.58	
+424	2026-05-25	May	Q2	50	Male	North	124106	Gold	11	7	108.06	No	Direct	3.2	Medium	3613.75	
+425	2026-03-04	March	Q1	53	Female	North	74037	Bronze	5	4	108.67	No	Referral	4.1	Medium	1289.43	
+426	2026-10-01	October	Q4	18	Male	East	118377	Bronze	8	7	98.43	Yes	Email	2.7	High	1979.45	
+427	2026-02-20	February	Q1	52	Female	South	47675	Silver	13	10	79.25	Yes	Direct	3.8	Medium	2568.5	
+428	2026-06-09	June	Q2	67	Female	East	58605	Gold	10	7	201.53	No	Email	4.3	Low	7760.41	
+429	2026-12-21	December	Q4	43	Female	East	124863	Bronze	10	8	148.22	No	Email	3.5	Medium	4657.31	
+430	2026-03-15	March	Q1	44	Female	East	44271	Silver	6	7	167.03	No	Direct	4.9	Low	7663.61	
+431	2026-05-06	May	Q2	66	Female	North	114881	Silver	6	6	109.05	No	Direct	3.9	Medium	2331.18	
+432	2026-05-20	May	Q2	60	Male	South	99606	Gold	8	6	144.57	Yes	Direct	3.8	Medium	3104.06	
+433	2026-11-15	November	Q4	57	Male	East	40244	Silver	7	5	177.17	Yes	Referral	3.9	Medium	5349.66	
+434	2026-08-28	August	Q3	21	Female	East	93307	Bronze	7	7	91.07	No	Referral	3.5	Medium	2516.54	
+435	2026-10-16	October	Q4	23	Female	West	114090	Bronze	7	8	180.0	No	Referral	4.9	Low	7454.57	
+436	2026-10-02	October	Q4	68	Male	South	104931	Gold	9	7	174.1	No	Referral	3.2	Medium	6815.68	
+437	2026-01-22	January	Q1	45	Male	West	117722	Bronze	6	4	128.45	No	Social Media	3.9	Medium	2069.64	
+438	2026-07-09	July	Q3	62	Male	North	136753	Bronze	8	6	121.93	No	Email	4.2	Low	2660.43	
+439	2026-07-27	July	Q3	31	Female	North	73458	Bronze	12	7	90.64	Yes	Email	4.1	Low	2587.84	
+440	2026-12-13	December	Q4	54	Male	South	141842	Bronze	9	7	171.91	No	Email	4.4	Low	5967.8	
+441	2026-09-16	September	Q3	26	Male	West	130738	Gold	12	7	137.67	No	Email	3.4	Medium	3859.42	
+442	2026-02-19	February	Q1	63	Male	West	81721	Silver	8	6	175.72	Yes	Referral	4.3	Low	6485.86	
+443	2026-11-30	November	Q4	43	Male	East	94708	Silver	12	8	184.24	No	Social Media	3.6	Medium	6159.95	
+444	2026-07-07	July	Q3	58	Male	West	128966	Bronze	3	2	136.27	Yes	Social Media	3.4	High	531.79	
+445	2026-07-27	July	Q3	39	Female	West	134334	Silver	8	5	161.89	No	Email	3.2	Medium	3212.79	
+446	2026-03-23	March	Q1	39	Male	North	45128	Platinum	8	7	197.68	Yes	Social Media	3.1	Medium	5172.38	
+447	2026-02-28	February	Q1	39	Male	South	92863	Silver	10	7	197.11	No	Referral	4.6	Low	7379.5	
+448	2026-08-15	August	Q3	25	Male	West	52717	Bronze	9	7	127.0	Yes	Email	3.4	Medium	3177.17	
+449	2026-02-17	February	Q1	60	Male	West	63192	Gold	11	8	159.24	Yes	Email	3.0	Medium	6178.53	
+450	2026-01-21	January	Q1	49	Male	East	147127	Bronze	7	7	90.85	Yes	Referral	2.8	High	1073.42	
+451	2026-01-19	January	Q1	19	Female	West	131448	Silver	10	6	100.6	Yes	Direct	3.4	Medium	2391.49	
+452	2026-02-11	February	Q1	69	Female	North	69509	Silver	10	6	142.59	Yes	Referral	3.6	Medium	4261.56	
+453	2026-03-12	March	Q1	47	Female	North	125741	Gold	10	10	174.57	Yes	Social Media	3.2	Medium	6846.57	
+454	2026-10-15	October	Q4	37	Female	South	110243	Bronze	6	8	143.75	No	Social Media	5	Low	7194.46	
+455	2026-07-07	July	Q3	66	Female	South	51620	Silver	7	5	172.72	Yes	Direct	3.3	Medium	2491.82	
+456	2026-07-17	July	Q3	31	Female	West	82372	Gold	10	9	228.15	No	Email	4.7	Low	15736.08	
+457	2026-04-23	April	Q2	60	Female	West	142695	Bronze	5	4	34.44	No	Direct	3.9	Medium	354.25	
+458	2026-04-17	April	Q2	26	Male	West	122979	Bronze	6	6	62.87	No	Email	3.0	Medium	1031.45	
+459	2026-02-16	February	Q1	21	Female	South	31062	Silver	17	10	135.24	No	Referral	4.1	Low	7349.25	
+460	2026-03-04	March	Q1	30	Male	North	136891	Bronze	10	8	165.25	No	Email	4.0	Low	5308.8	
+461	2026-09-12	September	Q3	24	Male	West	149775	Bronze	6	6	139.26	Yes	Email	4.3	Low	4292.25	
+462	2026-12-15	December	Q4	48	Male	East	88761	Silver	16	11	175.17	No	Email	3.7	Medium	8115.18	
+463	2026-08-04	August	Q3	43	Male	East	88489	Silver	10	6	175.37	No	Referral	4.2	Low	4916.88	
+464	2026-03-20	March	Q1	26	Female	East	40342	Silver	6	7	146.16	Yes	Referral	3.2	Medium	3200.02	
+465	2026-05-13	May	Q2	24	Male	North	129929	Bronze	3	3	119.5	No	Social Media	3.8	Medium	1515.81	
+466	2026-12-01	December	Q4	62	Male	West	92814	Silver	7	7	211.45	Yes	Email	4.7	Low	8429.65	
+467	2026-05-30	May	Q2	61	Female	North	149791	Gold	9	7	97.85	No	Direct	3.3	Medium	3101.15	
+468	2026-09-12	September	Q3	20	Male	South	125394	Platinum	13	8	159.56	No	Direct	5	Low	10327.57	
+469	2026-05-26	May	Q2	50	Female	West	87231	Silver	2	2	123.35	Yes	Referral	2.9	High	766.32	
+470	2026-06-16	June	Q2	42	Male	North	93442	Silver	7	7	132.67	No	Social Media	2.5	High	2550.35	
+471	2026-04-04	April	Q2	67	Female	West	30944	Gold	13	8	121.43	No	Referral	4.9	Low	5161.23	
+472	2026-10-16	October	Q4	27	Female	South	146476	Silver	5	6	144.48	Yes	Social Media	3.7	Medium	3928.71	
+473	2026-12-24	December	Q4	38	Female	East	137167	Silver	7	4	186.11	No	Email	4.3	Medium	3291.29	
+474	2026-05-24	May	Q2	63	Male	South	64130	Silver	9	7	161.76	No	Direct	3.4	Medium	3207.51	
+475	2026-11-01	November	Q4	18	Female	South	116077	Bronze	12	10	111.64	No	Referral	2.7	High	4070.92	
+476	2026-11-08	November	Q4	53	Female	West	127533	Platinum	15	11	239.22	No	Referral	3.9	Medium	22234.95	
+477	2026-10-24	October	Q4	27	Male	East	73356	Bronze	8	8	125.36	Yes	Direct	2.7	High	2284.19	
+478	2026-07-10	July	Q3	55	Male	South	117172	Silver	17	11	152.44	No	Social Media	3.7	Medium	6925.73	
+479	2026-06-02	June	Q2	60	Female	West	62355	Bronze	7	4	174.22	No	Social Media	4.0	Medium	2139.83	
+480	2026-08-15	August	Q3	22	Female	East	113745	Bronze	9	6	95.22	No	Direct	3.4	Medium	2015.61	
+481	2026-07-05	July	Q3	36	Male	East	149671	Silver	10	7	115.76	No	Email	4.0	Low	4351.8	
+482	2026-11-10	November	Q4	52	Male	South	124714	Silver	23	13	166.71	No	Direct	3.5	Medium	12138.33	
+483	2026-08-27	August	Q3	26	Male	South	40205	Silver	11	10	146.33	No	Direct	3.8	Medium	6815.61	
+484	2026-09-24	September	Q3	29	Female	East	136389	Bronze	8	6	92.47	No	Social Media	4.4	Low	2011.76	
+485	2026-11-10	November	Q4	45	Male	East	137020	Silver	6	7	149.74	No	Direct	3.2	Medium	5566.49	
+486	2026-03-01	March	Q1	31	Female	South	143108	Bronze	11	10	140.15	No	Direct	4.1	Low	6543.83	
+487	2026-01-01	January	Q1	67	Male	South	37351	Bronze	3	2	114.53	No	Email	3.8	High	662.49	
+488	2026-09-16	September	Q3	44	Male	East	55204	Silver	4	5	132.37	No	Email	3.8	Medium	2351.72	
+489	2026-07-27	July	Q3	58	Female	South	130418	Silver	11	7	172.17	No	Direct	4.7	Low	8605.35	
+490	2026-01-01	January	Q1	58	Male	North	114560	Gold	10	8	185.22	No	Social Media	4.3	Low	8122.11	
+491	2026-11-02	November	Q4	58	Male	North	113637	Platinum	16	11	253.5	No	Referral	4.0	Low	20922.95	
+492	2026-02-28	February	Q1	54	Female	South	117048	Bronze	12	9	171.19	Yes	Referral	3.5	Medium	5853.89	
+493	2026-01-25	January	Q1	21	Female	North	49744	Bronze	3	2	166.43	Yes	Social Media	3.5	High	929.18	
+494	2026-10-13	October	Q4	18	Male	East	39987	Bronze	5	4	79.99	Yes	Referral	4.7	Medium	1277.92	
+495	2026-09-13	September	Q3	60	Male	West	76405	Bronze	8	5	165.83	No	Direct	2.7	High	2088.26	
+496	2026-01-11	January	Q1	50	Male	East	25596	Silver	9	6	118.59	Yes	Email	4.2	Low	3759.83	
+497	2026-03-26	March	Q1	49	Male	North	31280	Silver	5	3	124.84	No	Social Media	4.6	Medium	1306.94	
+498	2026-02-22	February	Q1	53	Male	South	146814	Bronze	9	5	143.97	Yes	Direct	4.6	Low	3161.49	
+499	2026-02-03	February	Q1	58	Male	North	50159	Gold	13	9	174.17	No	Social Media	3.9	Medium	10106.0	
+500	2026-12-02	December	Q4	23	Male	West	41460	Bronze	12	7	133.34	No	Email	3.8	Medium	5540.92	
+501	2026-07-15	July	Q3	29	Male	North	107236	Platinum	15	9	198.43	Yes	Email	3.5	Medium	11228.2	
+502	2026-07-30	July	Q3	66	Female	East	119301	Gold	9	7	173.37	No	Referral	3.6	Medium	6200.73	
+503	2026-06-09	June	Q2	28	Male	North	59868	Gold	8	6	167.26	No	Direct	3.8	Medium	5044.65	
+504	2026-08-12	August	Q3	54	Male	South	146632	Silver	3	4	99.37	Yes	Direct	5	Medium	1685.51	
+505	2026-12-14	December	Q4	59	Male	South	55654	Gold	17	14	152.72	No	Email	4.2	Low	14605.79	
+506	2026-02-11	February	Q1	24	Female	East	67973	Bronze	2	2	114.43	No	Referral	4.5	High	714.14	
+507	2026-05-30	May	Q2	41	Female	West	80728	Silver	6	4	143.81	No	Social Media	4.5	Medium	2121.7	
+508	2026-12-19	December	Q4	45	Male	North	67929	Bronze	6	6	131.79	No	Email	3.7	Medium	3412.36	
+509	2026-07-11	July	Q3	61	Male	North	140872	Gold	11	7	160.8	No	Email	3.2	Medium	4001.09	
+510	2026-03-02	March	Q1	64	Female	South	51773	Silver	7	8	126.3	No	Email	3.2	Medium	3042.73	
+511	2026-12-03	December	Q4	69	Male	South	124676	Silver	12	8	207.44	Yes	Email	4.9	Low	11801.89	
+512	2026-04-09	April	Q2	37	Female	North	47672	Bronze	11	7	69.83	No	Email	3.8	Medium	1274.45	
+513	2026-10-17	October	Q4	61	Female	North	141587	Bronze	10	7	114.45	No	Direct	3.9	Medium	3762.2	
+514	2026-04-22	April	Q2	48	Male	South	149130	Gold	7	8	166.96	No	Social Media	3.9	Medium	4976.81	
+515	2026-05-22	May	Q2	42	Female	South	50657	Bronze	11	7	118.45	No	Social Media	3.8	Medium	2990.71	
+516	2026-11-19	November	Q4	47	Female	East	79064	Gold	14	9	169.75	No	Direct	3.4	Medium	7727.07	
+517	2026-01-18	January	Q1	42	Female	East	137647	Gold	9	10	209.46	Yes	Social Media	4.1	Low	13098.97	
+518	2026-01-22	January	Q1	40	Male	West	85873	Gold	10	7	150.01	No	Social Media	3.0	Medium	3261.94	
+519	2026-09-09	September	Q3	41	Male	South	93726	Bronze	7	8	117.85	Yes	Email	4.7	Low	3654.49	
+520	2026-11-19	November	Q4	19	Male	East	67988	Silver	13	8	204.68	No	Social Media	3.0	Medium	7864.43	
+521	2026-01-23	January	Q1	52	Female	South	45680	Gold	6	5	117.59	Yes	Email	3.7	Medium	2634.6	
+522	2026-01-24	January	Q1	42	Male	East	118039	Bronze	7	6	115.48	Yes	Direct	3.1	Medium	2078.66	
+523	2026-08-09	August	Q3	42	Female	West	112361	Bronze	6	4	115.81	Yes	Direct	2.4	High	1201.14	
+524	2026-06-01	June	Q2	28	Male	North	70272	Bronze	5	3	109.06	Yes	Direct	2.5	High	557.34	
+525	2026-02-14	February	Q1	42	Male	West	33986	Gold	12	9	176.2	No	Referral	3.8	Medium	7051.62	
+526	2026-09-25	September	Q3	45	Male	South	55735	Bronze	10	9	128.09	No	Email	3.2	Medium	4405.47	
+527	2026-07-06	July	Q3	28	Female	South	114401	Silver	7	5	170.99	No	Social Media	3.3	Medium	3770.31	
+528	2026-01-09	January	Q1	25	Female	South	63956	Bronze	8	6	111.16	Yes	Email	4.4	Low	3042.61	
+529	2026-03-27	March	Q1	57	Male	East	74767	Silver	6	5	151.87	No	Email	3.5	Medium	2131.66	
+530	2026-02-08	February	Q1	40	Male	East	97579	Bronze	10	6	159.64	No	Social Media	4.0	Low	5648.9	
+531	2026-07-21	July	Q3	41	Female	South	59819	Gold	12	9	117.47	No	Social Media	3.8	Medium	4481.74	
+532	2026-09-27	September	Q3	18	Female	North	75804	Bronze	6	4	87.78	Yes	Referral	4.1	Medium	1041.25	
+533	2026-11-12	November	Q4	19	Female	West	85077	Gold	10	11	200.98	Yes	Direct	4.4	Low	15836.1	
+534	2026-06-29	June	Q2	29	Female	North	98152	Bronze	6	6	112.24	No	Referral	4.2	Low	3279.44	
+535	2026-12-27	December	Q4	48	Female	South	115283	Gold	14	9	265.63	No	Social Media	3.8	Medium	11316.26	
+536	2026-09-30	September	Q3	34	Female	South	105386	Silver	11	7	106.52	Yes	Social Media	4.4	Low	4207.6	
+537	2026-12-03	December	Q4	19	Female	East	119757	Bronze	10	7	145.28	No	Email	3.4	Medium	3714.68	
+538	2026-09-04	September	Q3	60	Female	South	103805	Platinum	14	9	116.17	Yes	Referral	4.6	Low	7395.04	
+539	2026-03-27	March	Q1	51	Male	South	96718	Gold	5	3	118.45	No	Direct	3.9	Medium	1301.32	
+540	2026-03-19	March	Q1	54	Male	West	121299	Silver	6	6	84.24	Yes	Direct	3.8	Medium	2286.23	
+541	2026-09-10	September	Q3	29	Female	North	73163	Silver	9	9	148.33	No	Email	4.7	Low	7178.47	
+542	2026-01-31	January	Q1	51	Female	North	73444	Silver	13	9	67.97	Yes	Social Media	5	Low	3385.32	
+543	2026-04-19	April	Q2	67	Male	East	102004	Silver	4	4	175.53	No	Social Media	3.4	Medium	2246.96	
+544	2026-04-16	April	Q2	53	Female	South	28154	Bronze	10	9	144.96	No	Referral	5	Low	4489.98	
+545	2026-09-17	September	Q3	61	Female	South	29594	Bronze	9	5	140.24	Yes	Email	4.4	Low	2480.95	
+546	2026-01-28	January	Q1	28	Female	South	83550	Bronze	8	5	170.95	No	Referral	4.3	Low	4041.22	
+547	2026-07-08	July	Q3	69	Male	North	136555	Bronze	6	6	131.96	No	Email	2.1	High	1552.99	
+548	2026-05-25	May	Q2	52	Female	South	50391	Gold	15	9	149.8	No	Referral	4.1	Low	6695.33	
+549	2026-02-11	February	Q1	28	Male	North	141180	Bronze	13	8	93.79	Yes	Direct	3.9	Medium	3512.68	
+550	2026-12-11	December	Q4	38	Female	South	111872	Bronze	7	8	184.28	No	Email	4.4	Low	10991.34	
+551	2026-06-29	June	Q2	68	Male	East	121230	Silver	9	8	123.17	No	Referral	3.7	Medium	3863.54	
+552	2026-07-28	July	Q3	57	Female	West	55118	Bronze	9	8	128.56	No	Email	3.5	Medium	4512.84	
+553	2026-09-27	September	Q3	26	Female	East	68501	Silver	8	5	78.08	No	Direct	3.7	Medium	1447.91	
+554	2026-02-03	February	Q1	70	Male	South	80535	Gold	14	9	161.08	No	Referral	2.9	High	4595.4	
+555	2026-01-09	January	Q1	39	Female	North	64339	Silver	8	5	150.66	Yes	Referral	4.3	Low	3876.67	
+556	2026-03-17	March	Q1	18	Male	North	104106	Silver	11	8	147.38	No	Email	4.5	Low	4773.18	
+557	2026-02-06	February	Q1	21	Male	North	88483	Silver	13	8	151.4	No	Referral	3.2	Medium	3917.29	
+558	2026-07-20	July	Q3	59	Female	East	122198	Gold	10	10	121.07	No	Social Media	4.2	Low	9386.64	
+559	2026-08-20	August	Q3	18	Female	North	106693	Bronze	11	6	139.39	No	Referral	4.8	Low	5288.55	
+560	2026-05-09	May	Q2	27	Male	South	25671	Bronze	8	5	129.35	Yes	Email	3.2	Medium	1571.66	
+561	2026-04-26	April	Q2	67	Male	West	65148	Silver	4	4	134.95	No	Email	3.0	Medium	1810.1	
+562	2026-03-24	March	Q1	35	Male	West	66727	Bronze	13	9	59.06	Yes	Social Media	3.2	Medium	1197.0	
+563	2026-04-16	April	Q2	22	Male	West	54013	Gold	11	6	127.24	No	Social Media	4.1	Low	3347.53	
+564	2026-12-03	December	Q4	27	Male	West	149836	Platinum	24	15	244.71	Yes	Email	4.1	Low	36407.25	
+565	2026-10-27	October	Q4	20	Male	West	64780	Silver	8	7	145.2	Yes	Referral	3.6	Medium	3537.01	
+566	2026-06-17	June	Q2	46	Male	East	109370	Bronze	11	9	132.5	No	Direct	3.8	Medium	5495.55	
+567	2026-02-17	February	Q1	23	Male	South	118016	Bronze	7	7	146.06	Yes	Social Media	5	Low	7089.75	
+568	2026-03-10	March	Q1	51	Male	West	127023	Silver	5	4	95.52	Yes	Email	3.0	Medium	1270.69	
+569	2026-04-24	April	Q2	69	Male	North	37313	Platinum	10	7	222.37	No	Referral	3.3	Medium	5252.97	
+570	2026-11-09	November	Q4	58	Female	North	113214	Bronze	7	6	108.39	No	Social Media	3.3	Medium	3276.58	
+571	2026-10-27	October	Q4	38	Male	West	81563	Bronze	8	6	132.94	No	Direct	4.5	Low	3122.25	
+572	2026-04-09	April	Q2	34	Female	East	34787	Gold	8	5	153.62	No	Direct	3.8	Medium	3585.13	
+573	2026-04-25	April	Q2	39	Male	East	112991	Bronze	5	5	79.57	No	Social Media	4.7	Low	1384.41	
+574	2026-07-21	July	Q3	41	Female	East	87263	Gold	15	9	131.01	Yes	Email	4.1	Low	5529.6	
+575	2026-09-10	September	Q3	67	Male	West	106839	Gold	13	8	125.62	No	Email	3.7	Medium	4171.37	
+576	2026-07-28	July	Q3	40	Female	South	78115	Silver	12	8	125.39	No	Referral	2.9	High	3285.74	
+577	2026-10-16	October	Q4	39	Female	South	26321	Bronze	2	2	139.34	Yes	Social Media	4.1	High	927.78	
+578	2026-06-07	June	Q2	39	Female	North	67604	Bronze	9	6	117.07	No	Email	4.5	Low	3074.2	
+579	2026-07-19	July	Q3	30	Male	North	126017	Silver	14	8	152.94	Yes	Referral	3.7	Medium	5293.58	
+580	2026-05-10	May	Q2	30	Female	West	128554	Silver	8	5	188.35	Yes	Referral	4.5	Low	5883.6	
+581	2026-04-02	April	Q2	60	Female	North	101099	Bronze	9	5	160.28	No	Social Media	3.4	Medium	1931.77	
+582	2026-08-16	August	Q3	52	Male	South	94985	Platinum	13	10	185.49	No	Referral	2.7	High	7565.33	
+583	2026-01-23	January	Q1	46	Female	North	103893	Gold	9	8	155.04	No	Referral	4.3	Low	8558.47	
+584	2026-04-05	April	Q2	33	Female	South	26935	Platinum	8	6	156.59	Yes	Email	4.3	Low	4747.8	
+585	2026-01-07	January	Q1	68	Female	North	61420	Bronze	6	7	131.35	No	Social Media	3.8	Medium	3015.22	
+586	2026-10-08	October	Q4	26	Female	South	125752	Silver	10	7	112.01	No	Direct	3.6	Medium	3895.18	
+587	2026-01-12	January	Q1	69	Female	West	144606	Gold	5	6	120.44	Yes	Social Media	2.8	High	2181.34	
+588	2026-04-12	April	Q2	35	Male	West	70714	Silver	5	5	86.74	No	Email	3.5	Medium	1804.99	
+589	2026-05-28	May	Q2	61	Female	South	36253	Gold	7	6	160.07	Yes	Referral	3.3	Medium	3341.19	
+590	2026-09-25	September	Q3	42	Female	North	102929	Silver	8	5	112.98	No	Social Media	3.2	Medium	2370.27	
+591	2026-06-06	June	Q2	54	Male	West	86136	Bronze	5	6	128.96	No	Referral	4.2	Low	4260.79	
+592	2026-04-18	April	Q2	55	Male	North	56452	Bronze	6	4	144.2	No	Email	3.7	Medium	1596.16	
+593	2026-11-06	November	Q4	26	Male	East	81887	Silver	9	9	192.35	No	Social Media	2.9	High	6262.43	
+594	2026-03-30	March	Q1	44	Male	West	71530	Silver	4	3	162.26	Yes	Direct	3.6	Medium	1570.63	
+595	2026-01-05	January	Q1	38	Male	South	98060	Platinum	7	9	148.17	No	Direct	3.1	Medium	5589.8	
+596	2026-06-19	June	Q2	48	Male	West	113227	Bronze	9	6	144.06	Yes	Social Media	4.1	Low	2900.93	
+597	2026-01-13	January	Q1	28	Female	South	104879	Bronze	6	4	159.51	No	Email	3.2	Medium	1998.63	
+598	2026-07-06	July	Q3	61	Female	West	95636	Bronze	6	5	111.03	Yes	Social Media	3.1	Medium	2319.04	
+599	2026-01-20	January	Q1	18	Female	North	52711	Gold	10	6	120.81	No	Social Media	3.3	Medium	2345.13	
+600	2026-10-27	October	Q4	48	Female	South	76140	Platinum	18	10	195.08	Yes	Referral	3.1	Medium	9156.33	
+601	2026-12-21	December	Q4	54	Female	West	67848	Bronze	12	7	160.71	Yes	Social Media	3.3	Medium	5234.08	
+602	2026-05-31	May	Q2	52	Male	West	85320	Silver	6	4	141.81	No	Email	4.0	Medium	1876.87	
+603	2026-02-12	February	Q1	29	Male	East	78861	Bronze	11	7	202.71	No	Email	4.0	Low	8472.97	
+604	2026-05-01	May	Q2	51	Male	East	118789	Silver	11	6	118.87	No	Direct	4.3	Low	4069.11	
+605	2026-06-21	June	Q2	67	Male	North	109100	Bronze	7	6	131.22	No	Referral	4.8	Low	4496.3	
+606	2026-06-06	June	Q2	30	Male	North	46081	Bronze	8	5	151.79	Yes	Referral	4.1	Low	3854.17	
+607	2026-07-27	July	Q3	63	Male	South	45175	Bronze	14	8	127.52	No	Social Media	4.3	Low	5326.59	
+608	2026-06-11	June	Q2	20	Female	West	47259	Platinum	7	4	171.01	No	Referral	4.4	Medium	3016.59	
+609	2026-12-15	December	Q4	23	Female	North	62359	Gold	10	8	228.01	No	Referral	3.7	Medium	8810.65	
+610	2026-06-10	June	Q2	61	Female	East	59282	Platinum	8	6	168.26	Yes	Referral	5	Low	8092.06	
+611	2026-07-12	July	Q3	60	Male	North	41200	Bronze	11	7	64.77	No	Referral	5	Low	2492.74	
+612	2026-10-18	October	Q4	58	Male	East	130658	Bronze	11	8	162.58	Yes	Direct	4.0	Low	6091.4	
+613	2026-08-26	August	Q3	58	Male	South	43290	Platinum	11	10	153.11	Yes	Direct	3.3	Medium	8708.36	
+614	2026-09-08	September	Q3	26	Male	North	58630	Silver	7	6	133.61	Yes	Social Media	3.7	Medium	3320.26	
+615	2026-07-14	July	Q3	50	Male	South	88763	Silver	13	10	98.64	Yes	Social Media	3.1	Medium	3633.95	
+616	2026-11-14	November	Q4	28	Male	South	31153	Bronze	10	6	144.73	No	Email	3.2	Medium	3151.17	
+617	2026-12-15	December	Q4	65	Male	West	134724	Silver	7	7	230.64	No	Referral	3.6	Medium	6637.84	
+618	2026-10-26	October	Q4	49	Male	South	71933	Bronze	6	5	120.4	Yes	Direct	4.1	Low	2266.69	
+619	2026-05-10	May	Q2	67	Male	North	138340	Silver	7	8	132.91	Yes	Email	3.5	Medium	4296.1	
+620	2026-04-25	April	Q2	38	Female	East	131497	Silver	11	7	114.71	Yes	Referral	3.9	Medium	3403.15	
+621	2026-06-20	June	Q2	49	Female	South	81841	Gold	14	10	155.6	No	Referral	3.3	Medium	8379.37	
+622	2026-11-16	November	Q4	22	Female	East	57700	Silver	8	7	159.17	Yes	Email	3.4	Medium	4529.88	
+623	2026-06-25	June	Q2	68	Male	East	61050	Gold	6	4	94.34	Yes	Referral	3.5	Medium	1703.55	
+624	2026-05-04	May	Q2	39	Male	South	49553	Silver	3	2	135.4	Yes	Email	4.2	High	951.83	
+625	2026-07-28	July	Q3	34	Female	North	115302	Gold	6	7	182.95	No	Email	5	Low	7309.11	
+626	2026-09-15	September	Q3	44	Female	East	141848	Bronze	3	2	134.62	No	Referral	3.6	High	837.64	
+627	2026-10-08	October	Q4	28	Male	South	111069	Platinum	8	7	183.3	No	Social Media	3.7	Medium	8827.11	
+628	2026-11-20	November	Q4	65	Male	West	74178	Bronze	11	10	189.48	No	Direct	4.2	Low	11307.44	
+629	2026-05-19	May	Q2	23	Female	West	102201	Bronze	6	5	82.27	No	Direct	2.8	High	944.02	
+630	2026-01-13	January	Q1	49	Male	West	65063	Bronze	12	7	155.03	Yes	Email	4.3	Low	5002.57	
+631	2026-10-10	October	Q4	29	Male	North	133478	Bronze	6	5	138.83	No	Direct	4.3	Low	2699.92	
+632	2026-07-16	July	Q3	67	Female	West	129855	Bronze	6	7	127.73	Yes	Referral	4.5	Low	5073.39	
+633	2026-11-16	November	Q4	29	Male	South	31388	Bronze	8	5	82.4	No	Social Media	3.3	Medium	1783.91	
+634	2026-02-09	February	Q1	42	Male	East	126996	Silver	13	8	167.7	No	Email	3.8	Medium	6079.26	
+635	2026-03-06	March	Q1	18	Female	North	51466	Silver	7	4	203.45	No	Referral	3.8	Medium	2571.39	
+636	2026-09-02	September	Q3	62	Female	North	77102	Silver	10	7	108.4	No	Referral	3.7	Medium	3223.31	
+637	2026-02-28	February	Q1	23	Female	North	133663	Bronze	16	9	142.92	Yes	Email	3.8	Medium	5433.01	
+638	2026-03-03	March	Q1	65	Male	East	90001	Bronze	8	6	137.26	No	Email	2.4	High	1709.17	
+639	2026-01-20	January	Q1	60	Female	West	120475	Bronze	5	4	89.48	Yes	Direct	2.7	High	627.66	
+640	2026-05-06	May	Q2	37	Female	West	58089	Bronze	5	4	163.66	No	Referral	3.7	Medium	2050.25	
+641	2026-01-02	January	Q1	19	Female	West	114180	Bronze	3	4	100.99	Yes	Referral	3.1	Medium	1071.35	
+642	2026-10-26	October	Q4	21	Male	East	54616	Silver	12	7	159.43	No	Referral	4.9	Low	5836.01	
+643	2026-07-01	July	Q3	25	Male	North	113747	Platinum	8	8	235.52	No	Social Media	3.5	Medium	7856.7	
+644	2026-05-01	May	Q2	38	Male	East	83590	Gold	7	6	140.42	Yes	Direct	3.9	Medium	3790.69	
+645	2026-12-11	December	Q4	36	Male	East	30815	Bronze	9	7	153.03	Yes	Email	2.9	High	3751.66	
+646	2026-03-10	March	Q1	52	Male	West	54581	Platinum	3	3	152.23	No	Referral	3.6	Medium	1821.79	
+647	2026-05-25	May	Q2	47	Male	East	107679	Gold	14	10	133.61	No	Referral	3.8	Medium	5491.68	
+648	2026-01-01	January	Q1	37	Male	North	76592	Silver	5	3	86.97	No	Email	4.7	Medium	939.17	
+649	2026-12-08	December	Q4	21	Male	North	102142	Silver	10	9	197.08	No	Direct	3.6	Medium	8319.04	
+650	2026-07-04	July	Q3	20	Male	West	41883	Silver	11	8	200.75	No	Direct	3.5	Medium	5535.39	
+651	2026-07-07	July	Q3	58	Female	East	130132	Silver	5	6	98.8	Yes	Email	3.8	Medium	1865.21	
+652	2026-03-16	March	Q1	55	Male	South	148320	Bronze	7	6	161.89	No	Email	3.9	Medium	2800.46	
+653	2026-03-16	March	Q1	50	Female	West	126816	Bronze	2	1	105.66	Yes	Referral	4.6	High	259.69	
+654	2026-07-09	July	Q3	32	Male	East	138246	Gold	5	5	116.74	No	Direct	3.1	Medium	3025.92	
+655	2026-02-11	February	Q1	53	Female	East	106879	Silver	10	8	157.22	No	Direct	2.5	High	3317.64	
+656	2026-06-02	June	Q2	36	Male	East	130189	Bronze	10	8	95.72	No	Referral	3.6	Medium	2642.43	
+657	2026-09-13	September	Q3	48	Male	North	95977	Bronze	7	5	123.38	No	Direct	4.0	Low	2935.48	
+658	2026-12-19	December	Q4	55	Female	North	43100	Bronze	8	9	190.31	No	Email	3.2	Medium	9797.79	
+659	2026-04-22	April	Q2	61	Male	West	69609	Gold	13	8	151.62	Yes	Direct	3.0	Medium	3741.36	
+660	2026-10-04	October	Q4	57	Female	North	35568	Bronze	4	4	101.11	Yes	Direct	3.9	Medium	1573.49	
+661	2026-05-23	May	Q2	56	Male	West	51033	Bronze	4	4	139.41	No	Direct	4.3	Medium	1885.74	
+662	2026-06-28	June	Q2	65	Female	South	91944	Bronze	11	7	123.81	Yes	Social Media	3.0	Medium	2825.64	
+663	2026-02-02	February	Q1	26	Female	West	94149	Gold	8	6	173.26	No	Social Media	4.5	Low	5473.62	
+664	2026-01-26	January	Q1	30	Male	West	29205	Bronze	6	7	144.53	Yes	Referral	4.8	Low	4410.49	
+665	2026-10-06	October	Q4	49	Male	North	142253	Platinum	8	9	220.06	No	Email	3.7	Medium	11875.76	
+666	2026-05-17	May	Q2	48	Male	North	89045	Bronze	14	8	114.18	No	Referral	4.1	Low	3858.21	
+667	2026-10-13	October	Q4	68	Female	West	56765	Bronze	5	4	164.04	No	Direct	3.9	Medium	2250.12	
+668	2026-05-31	May	Q2	40	Male	West	44343	Bronze	8	5	105.88	No	Social Media	4.6	Low	2541.39	
+669	2026-12-24	December	Q4	26	Female	West	64205	Gold	9	10	192.16	Yes	Referral	4.3	Low	14147.02	
+670	2026-05-30	May	Q2	30	Male	East	143054	Silver	4	3	148.69	No	Referral	3.8	Medium	1445.53	
+671	2026-07-13	July	Q3	55	Female	East	79254	Platinum	10	8	125.7	Yes	Referral	3.7	Medium	5962.88	
+672	2026-12-03	December	Q4	61	Female	South	102554	Bronze	14	10	214.29	No	Referral	3.3	Medium	11119.03	
+673	2026-11-17	November	Q4	64	Male	South	58441	Silver	13	10	192.38	No	Email	3.8	Medium	11938.25	
+674	2026-06-07	June	Q2	49	Male	West	82379	Silver	7	7	240.92	No	Direct	3.7	Medium	8359.39	
+675	2026-08-21	August	Q3	55	Male	South	138517	Silver	9	6	108.64	No	Referral	4.9	Low	4261.41	
+676	2026-01-23	January	Q1	36	Female	South	76287	Gold	6	7	119.46	No	Email	2.7	High	1979.29	
+677	2026-01-12	January	Q1	37	Female	West	59908	Bronze	6	4	117.68	No	Direct	3.3	Medium	1837.9	
+678	2026-07-23	July	Q3	31	Female	West	131874	Bronze	4	5	138.9	Yes	Referral	4.5	Low	3092.87	
+679	2026-07-24	July	Q3	67	Male	North	121930	Bronze	11	6	71.77	No	Referral	4.1	Low	1698.98	
+680	2026-08-12	August	Q3	29	Female	West	126268	Silver	11	9	159.16	No	Referral	3.6	Medium	5689.03	
+681	2026-10-21	October	Q4	63	Female	West	116959	Gold	14	8	143.91	No	Email	3.6	Medium	5944.04	
+682	2026-08-25	August	Q3	64	Male	South	28926	Gold	7	4	108.66	No	Email	4.2	Medium	2134.29	
+683	2026-08-01	August	Q3	46	Male	North	108296	Silver	7	5	167.35	Yes	Email	3.6	Medium	3673.18	
+684	2026-10-25	October	Q4	42	Female	East	32782	Bronze	7	6	95.79	No	Email	4.5	Low	2882.11	
+685	2026-05-21	May	Q2	44	Female	South	76777	Gold	10	7	155.02	No	Referral	3.6	Medium	5398.56	
+686	2026-12-05	December	Q4	52	Female	North	53565	Bronze	11	11	145.01	Yes	Direct	3.2	Medium	8192.21	
+687	2026-11-16	November	Q4	25	Male	West	69096	Gold	10	8	193.44	Yes	Email	4.0	Low	12994.78	
+688	2026-04-22	April	Q2	47	Female	South	84863	Bronze	6	4	126.87	Yes	Email	3.8	Medium	1210.27	
+689	2026-09-16	September	Q3	49	Female	West	133595	Platinum	8	8	88.81	Yes	Email	3.3	Medium	3257.66	
+690	2026-11-24	November	Q4	39	Female	West	141639	Bronze	7	7	160.2	No	Email	3.3	Medium	4157.75	
+691	2026-02-23	February	Q1	32	Male	North	84542	Silver	11	7	159.88	No	Social Media	3.8	Medium	3856.73	
+692	2026-03-19	March	Q1	34	Female	East	98950	Bronze	5	5	81.39	Yes	Referral	3.8	Medium	1393.67	
+693	2026-09-19	September	Q3	62	Male	South	112219	Silver	7	4	138.32	No	Social Media	3.3	Medium	1765.91	
+694	2026-09-01	September	Q3	65	Male	South	43344	Bronze	8	7	189.52	Yes	Email	2.8	High	3183.89	
+695	2026-12-25	December	Q4	29	Female	West	149808	Bronze	8	10	182.12	No	Email	2.8	High	4556.83	
+696	2026-12-23	December	Q4	48	Female	South	102424	Bronze	4	3	142.3	No	Social Media	3.5	Medium	1612.23	
+697	2026-07-22	July	Q3	66	Male	South	134735	Gold	8	9	182.39	Yes	Referral	3.0	Medium	7283.29	
+698	2026-12-04	December	Q4	24	Female	North	53078	Bronze	16	12	161.31	No	Social Media	4.5	Low	15264.24	
+699	2026-09-23	September	Q3	31	Female	West	27442	Gold	9	8	130.09	Yes	Social Media	3.0	Medium	4602.97	
+700	2026-10-01	October	Q4	28	Female	North	97889	Bronze	11	7	165.75	Yes	Direct	3.6	Medium	4386.76	
+701	2026-01-13	January	Q1	44	Female	North	77012	Bronze	5	6	126.61	No	Email	3.3	Medium	1831.14	
+702	2026-05-22	May	Q2	33	Female	South	122607	Silver	13	7	72.66	Yes	Direct	4.0	Low	2344.64	
+703	2026-08-22	August	Q3	27	Male	North	112247	Silver	7	6	105.01	No	Referral	2.2	High	1381.56	
+704	2026-02-12	February	Q1	66	Male	South	107342	Silver	9	10	161.83	Yes	Referral	3.7	Medium	8699.07	
+705	2026-07-01	July	Q3	28	Female	East	61863	Bronze	4	3	140.15	No	Social Media	3.0	Medium	1463.43	
+706	2026-02-25	February	Q1	42	Female	South	63634	Bronze	7	5	81.58	No	Email	4.1	Low	1846.41	
+707	2026-07-28	July	Q3	57	Female	West	33361	Silver	10	7	111.34	No	Social Media	3.4	Medium	2857.54	
+708	2026-10-03	October	Q4	61	Female	West	45868	Bronze	6	4	87.07	No	Direct	3.5	Medium	1476.7	
+709	2026-12-29	December	Q4	64	Male	North	100527	Gold	11	8	265.02	Yes	Direct	4.5	Low	18463.8	
+710	2026-04-15	April	Q2	65	Male	North	51721	Silver	5	5	108.63	No	Email	4.1	Low	2514.11	
+711	2026-06-29	June	Q2	39	Male	North	83090	Bronze	12	7	130.54	No	Direct	2.5	High	1626.97	
+712	2026-07-13	July	Q3	26	Female	West	46425	Gold	7	7	114.58	No	Email	2.6	High	2291.24	
+713	2026-11-25	November	Q4	61	Male	East	90596	Platinum	17	10	267.73	Yes	Email	3.7	Medium	18549.19	
+714	2026-10-21	October	Q4	47	Female	East	75735	Silver	6	5	121.23	No	Referral	4.6	Low	4277.69	
+715	2026-01-22	January	Q1	23	Female	South	121212	Bronze	6	4	67.84	No	Social Media	2.9	High	657.64	
+716	2026-12-07	December	Q4	23	Female	East	141260	Silver	9	9	101.24	Yes	Referral	4.2	Low	4733.95	
+717	2026-07-26	July	Q3	49	Female	North	122173	Bronze	8	7	79.64	No	Social Media	4.0	Low	2880.57	
+718	2026-11-02	November	Q4	56	Female	North	34820	Silver	13	8	107.5	No	Social Media	4.0	Low	4732.0	
+719	2026-08-29	August	Q3	42	Male	South	97515	Silver	13	8	113.17	No	Email	5.0	Low	4325.75	
+720	2026-09-10	September	Q3	20	Female	West	40917	Bronze	4	3	117.15	Yes	Direct	3.4	Medium	920.11	
+721	2026-10-16	October	Q4	48	Female	West	62317	Bronze	6	6	117.97	No	Direct	3.2	Medium	2327.5	
+722	2026-07-29	July	Q3	64	Male	East	70357	Platinum	8	7	212.53	No	Email	3.9	Medium	7397.98	
+723	2026-04-06	April	Q2	21	Female	East	148769	Bronze	4	5	110.9	Yes	Social Media	2.0	High	1222.81	
+724	2026-10-24	October	Q4	57	Male	East	85442	Bronze	5	5	122.66	No	Email	3.9	Medium	1933.06	
+725	2026-06-14	June	Q2	45	Male	West	61539	Bronze	13	8	90.92	Yes	Email	4.6	Low	3845.16	
+726	2026-09-19	September	Q3	30	Male	South	72489	Bronze	7	8	92.88	Yes	Social Media	4.4	Low	3415.15	
+727	2026-05-23	May	Q2	63	Male	West	133495	Gold	3	4	129.36	Yes	Social Media	3.3	Medium	2211.24	
+728	2026-10-11	October	Q4	20	Female	South	88492	Bronze	3	2	147.21	No	Direct	4.5	High	845.08	
+729	2026-01-16	January	Q1	59	Female	South	44407	Bronze	7	5	96.2	No	Referral	2.9	High	874.07	
+730	2026-06-03	June	Q2	24	Female	South	69088	Silver	7	7	240.71	No	Referral	3.9	Medium	6405.49	
+731	2026-10-08	October	Q4	40	Female	North	72788	Silver	7	5	144.67	No	Email	4.4	Low	3628.08	
+732	2026-11-09	November	Q4	35	Male	South	143910	Gold	7	8	164.64	No	Social Media	4.2	Low	11264.52	
+733	2026-02-02	February	Q1	63	Female	North	105151	Bronze	15	9	177.83	No	Referral	3.8	Medium	7297.68	
+734	2026-03-10	March	Q1	32	Female	East	111329	Silver	13	8	110.43	No	Email	4.3	Low	4136.85	
+735	2026-07-18	July	Q3	60	Male	West	97682	Bronze	6	6	183.53	Yes	Referral	3.6	Medium	4731.26	
+736	2026-03-06	March	Q1	20	Female	East	100364	Platinum	10	11	151.33	Yes	Referral	4.6	Low	8536.15	
+737	2026-06-15	June	Q2	43	Female	East	40872	Silver	11	6	135.17	Yes	Referral	3.9	Medium	2901.99	
+738	2026-11-10	November	Q4	37	Male	South	84216	Bronze	10	6	182.93	Yes	Email	5	Low	7328.04	
+739	2026-08-17	August	Q3	22	Female	North	39728	Silver	11	10	202.47	No	Social Media	2.7	High	5676.04	
+740	2026-12-01	December	Q4	65	Male	South	82625	Bronze	11	10	92.19	No	Email	4.2	Low	6859.59	
+741	2026-05-28	May	Q2	51	Female	East	144972	Silver	9	6	180.16	No	Referral	4.2	Low	6053.0	
+742	2026-01-29	January	Q1	39	Female	West	116896	Silver	3	3	129.46	Yes	Referral	4.1	Medium	1810.95	
+743	2026-04-30	April	Q2	44	Female	South	146899	Gold	9	5	120.8	No	Referral	4.8	Low	3484.65	
+744	2026-05-23	May	Q2	63	Male	South	134308	Gold	6	6	193.68	No	Email	3.9	Medium	5031.51	
+745	2026-09-19	September	Q3	20	Female	East	68007	Bronze	9	5	108.29	Yes	Referral	3.6	Medium	1461.74	
+746	2026-12-23	December	Q4	39	Female	North	48544	Bronze	11	11	264.25	No	Referral	3.8	Medium	17405.48	
+747	2026-01-24	January	Q1	51	Female	South	61643	Silver	9	7	204.23	No	Email	3.3	Medium	4263.47	
+748	2026-02-16	February	Q1	61	Male	South	43087	Silver	6	6	177.2	No	Email	4.8	Low	7295.02	
+749	2026-04-20	April	Q2	42	Male	West	97885	Silver	10	7	86.8	Yes	Social Media	4.6	Low	2176.95	
+750	2026-02-13	February	Q1	32	Female	West	61721	Gold	18	13	111.89	Yes	Referral	3.4	Medium	5312.8	
+751	2026-11-19	November	Q4	53	Female	West	78460	Silver	16	11	168.23	No	Social Media	3.2	Medium	6909.81	
+752	2026-03-04	March	Q1	37	Female	East	118541	Gold	6	5	162.2	Yes	Referral	2.5	High	1619.13	
+753	2026-07-08	July	Q3	36	Male	West	61495	Gold	11	7	162.43	Yes	Email	3.4	Medium	5043.54	
+754	2026-05-22	May	Q2	57	Male	East	61095	Bronze	12	7	73.97	Yes	Referral	4.1	Low	2466.38	
+755	2026-06-09	June	Q2	62	Male	West	115193	Bronze	8	7	140.12	Yes	Direct	3.3	Medium	3607.48	
+756	2026-04-20	April	Q2	45	Female	North	147307	Bronze	3	3	96.27	Yes	Direct	4.3	Medium	929.92	
+757	2026-04-12	April	Q2	36	Female	North	61957	Silver	12	8	58.36	Yes	Email	2.8	High	1103.03	
+758	2026-12-20	December	Q4	19	Male	North	35922	Bronze	15	9	248.56	No	Direct	3.7	Medium	12226.18	
+759	2026-06-15	June	Q2	66	Female	South	132798	Silver	9	7	126.15	No	Social Media	3.8	Medium	3174.08	
+760	2026-12-25	December	Q4	61	Female	North	74954	Bronze	13	9	220.88	No	Email	3.0	Medium	7861.3	
+761	2026-08-18	August	Q3	56	Male	North	103505	Silver	8	8	152.25	Yes	Referral	4.5	Low	6514.91	
+762	2026-08-28	August	Q3	35	Female	West	99867	Platinum	11	10	163.56	Yes	Referral	4.7	Low	13416.62	
+763	2026-03-01	March	Q1	42	Female	North	50952	Bronze	10	8	131.54	No	Email	3.3	Medium	3128.04	
+764	2026-09-28	September	Q3	37	Male	South	116093	Silver	5	5	97.65	Yes	Referral	3.1	Medium	1702.56	
+765	2026-08-04	August	Q3	37	Female	West	59780	Bronze	6	6	153.34	No	Referral	4.3	Low	5347.87	
+766	2026-04-16	April	Q2	70	Female	West	95141	Silver	9	6	56.42	Yes	Email	3.7	Medium	1068.37	
+767	2026-11-20	November	Q4	66	Female	North	56780	Bronze	10	9	103.45	No	Referral	4.6	Low	4316.26	
+768	2026-07-23	July	Q3	69	Male	West	127794	Gold	8	9	197.98	No	Direct	3.7	Medium	6852.4	
+769	2026-11-26	November	Q4	43	Male	North	64938	Silver	9	10	160.61	No	Referral	3.7	Medium	8486.51	
+770	2026-11-21	November	Q4	27	Female	North	86159	Silver	15	10	172.37	Yes	Email	3.3	Medium	7119.5	
+771	2026-02-11	February	Q1	21	Female	North	87182	Bronze	12	10	177.92	Yes	Email	3.5	Medium	7060.69	
+772	2026-02-14	February	Q1	35	Female	South	28274	Gold	9	11	219.81	Yes	Social Media	4.8	Low	13056.52	
+773	2026-09-13	September	Q3	49	Male	North	46243	Bronze	3	3	99.2	No	Direct	4.6	Medium	1427.03	
+774	2026-03-15	March	Q1	27	Male	North	127928	Silver	6	5	161.03	No	Referral	4.4	Low	4461.09	
+775	2026-05-01	May	Q2	34	Female	South	90051	Bronze	2	2	75.49	No	Direct	4.7	High	542.53	
+776	2026-01-08	January	Q1	42	Female	South	75699	Bronze	5	6	144.99	Yes	Referral	2.8	High	1712.94	
+777	2026-11-04	November	Q4	55	Male	East	34689	Bronze	10	8	164.51	No	Referral	3.2	Medium	5355.87	
+778	2026-09-29	September	Q3	65	Male	South	27495	Gold	14	8	156.54	No	Email	3.9	Medium	6557.84	
+779	2026-07-30	July	Q3	55	Male	West	53918	Bronze	6	5	150.29	No	Referral	3.1	Medium	2728.75	
+780	2026-01-09	January	Q1	42	Male	South	63875	Bronze	3	2	92.26	Yes	Social Media	3.3	High	410.58	
+781	2026-02-13	February	Q1	39	Female	North	136627	Platinum	10	8	220.8	No	Email	3.5	Medium	7666.93	
+782	2026-02-25	February	Q1	62	Male	East	93810	Bronze	9	6	162.05	No	Email	3.3	Medium	3387.11	
+783	2026-12-17	December	Q4	39	Female	East	46730	Bronze	9	8	189.44	Yes	Direct	3.3	Medium	6199.1	
+784	2026-08-02	August	Q3	69	Female	East	98072	Bronze	8	5	125.25	No	Social Media	3.3	Medium	1666.16	
+785	2026-10-30	October	Q4	19	Male	South	139646	Silver	9	9	112.21	Yes	Social Media	3.7	Medium	4731.03	
+786	2026-05-14	May	Q2	18	Male	South	78491	Platinum	8	5	151.75	No	Referral	4.7	Low	6514.86	
+787	2026-01-23	January	Q1	40	Female	East	65991	Gold	8	6	98.57	No	Referral	3.6	Medium	2083.37	
+788	2026-02-20	February	Q1	66	Female	South	141509	Silver	8	6	152.43	No	Referral	2.2	High	2344.55	
+789	2026-06-25	June	Q2	19	Female	South	91029	Silver	9	9	136.58	Yes	Direct	3.7	Medium	4740.14	
+790	2026-03-26	March	Q1	35	Female	South	78192	Gold	11	6	199.36	No	Email	3.3	Medium	3576.91	
+791	2026-04-25	April	Q2	39	Male	North	59459	Bronze	3	2	132.99	Yes	Social Media	4.4	High	518.3	
+792	2026-06-28	June	Q2	53	Female	South	110136	Silver	7	5	122.18	No	Direct	3.2	Medium	2793.82	
+793	2026-06-19	June	Q2	44	Female	North	112527	Silver	14	9	101.15	No	Referral	4.1	Low	5124.42	
+794	2026-08-30	August	Q3	47	Female	North	97338	Bronze	10	6	127.85	No	Referral	4.1	Low	4046.41	
+795	2026-04-29	April	Q2	28	Male	North	95595	Gold	5	3	116.25	Yes	Referral	3.8	Medium	1750.87	
+796	2026-04-28	April	Q2	68	Female	West	93047	Gold	12	8	170.05	Yes	Direct	3.8	Medium	6637.61	
+797	2026-05-09	May	Q2	51	Male	West	25250	Bronze	6	4	121.22	Yes	Social Media	4.4	Medium	1915.23	
+798	2026-01-06	January	Q1	51	Female	East	82995	Gold	10	6	139.9	No	Referral	3.1	Medium	3787.23	
+799	2026-11-02	November	Q4	42	Male	East	62761	Silver	8	7	234.44	Yes	Email	4.0	Low	10217.71	
+800	2026-04-18	April	Q2	27	Male	East	137383	Silver	10	11	125.42	No	Email	4.5	Low	8371.96	
+801	2026-04-28	April	Q2	55	Male	West	118655	Bronze	3	3	174.46	No	Referral	3.0	Medium	1912.95	
+802	2026-11-28	November	Q4	59	Male	South	25751	Bronze	5	5	182.16	Yes	Direct	4.4	Low	6471.48	
+803	2026-07-23	July	Q3	68	Male	South	70350	Bronze	7	5	138.19	Yes	Social Media	3.4	Medium	3008.6	
+804	2026-07-22	July	Q3	56	Female	North	99655	Bronze	5	4	48.26	Yes	Referral	3.4	Medium	723.86	
+805	2026-01-12	January	Q1	58	Male	North	40758	Silver	8	9	87.92	Yes	Social Media	2.4	High	1338.59	
+806	2026-06-18	June	Q2	57	Female	East	42297	Gold	14	8	176.17	No	Direct	4.1	Low	9908.6	
+807	2026-08-08	August	Q3	18	Female	West	44625	Silver	10	6	150.46	No	Social Media	3.1	Medium	4009.5	
+808	2026-12-11	December	Q4	22	Male	West	57749	Gold	12	9	213.83	No	Referral	4.5	Low	14666.15	
+809	2026-11-23	November	Q4	52	Female	South	148231	Bronze	7	4	141.88	No	Social Media	4.6	Medium	3120.8	
+810	2026-06-29	June	Q2	28	Female	North	49651	Gold	12	7	149.64	No	Social Media	3.7	Medium	3854.05	
+811	2026-09-02	September	Q3	29	Male	West	47673	Platinum	9	10	223.29	No	Direct	2.4	High	5421.15	
+812	2026-11-30	November	Q4	60	Female	South	56206	Bronze	4	5	140.73	No	Social Media	3.7	Medium	2468.3	
+813	2026-09-16	September	Q3	63	Male	North	67360	Silver	4	5	103.25	Yes	Referral	4.0	Low	1987.43	
+814	2026-08-02	August	Q3	25	Male	West	57669	Bronze	11	10	109.1	Yes	Direct	4.1	Low	5554.03	
+815	2026-12-02	December	Q4	26	Male	East	35236	Bronze	9	6	210.75	No	Social Media	4.2	Low	8383.23	
+816	2026-12-06	December	Q4	20	Male	West	37662	Gold	11	10	178.27	No	Social Media	4.9	Low	17640.35	
+817	2026-08-24	August	Q3	51	Male	South	50058	Bronze	13	8	127.08	No	Social Media	4.0	Low	4574.37	
+818	2026-09-24	September	Q3	61	Female	South	149950	Gold	16	9	156.6	No	Direct	4.6	Low	8803.65	
+819	2026-11-28	November	Q4	63	Male	South	131645	Silver	9	9	171.22	No	Referral	3.4	Medium	7433.73	
+820	2026-01-02	January	Q1	39	Female	West	76234	Silver	6	6	153.8	Yes	Direct	3.9	Medium	3867.24	
+821	2026-08-23	August	Q3	18	Female	East	37304	Silver	13	10	126.04	Yes	Direct	4.4	Low	7197.13	
+822	2026-09-16	September	Q3	32	Female	West	60117	Platinum	11	9	178.18	Yes	Social Media	4.2	Low	9321.08	
+823	2026-02-25	February	Q1	55	Male	East	148262	Silver	7	7	172.93	Yes	Referral	3.2	Medium	3896.01	
+824	2026-09-17	September	Q3	37	Male	North	84545	Bronze	11	7	116.07	Yes	Direct	4.5	Low	3673.01	
+825	2026-01-19	January	Q1	37	Female	East	51114	Bronze	4	4	89.37	No	Social Media	3.4	Medium	1074.53	
+826	2026-12-09	December	Q4	49	Male	South	77295	Gold	8	9	212.97	No	Social Media	3.4	Medium	10824.03	
+827	2026-01-23	January	Q1	46	Male	West	40277	Gold	12	7	194.31	No	Email	4.0	Low	5459.13	
+828	2026-05-03	May	Q2	53	Female	South	142404	Bronze	8	5	64.76	Yes	Direct	3.5	Medium	805.07	
+829	2026-10-19	October	Q4	29	Male	North	109551	Bronze	5	4	99.26	No	Email	3.4	Medium	1445.95	
+830	2026-06-20	June	Q2	40	Female	East	43706	Bronze	12	8	180.74	No	Referral	3.0	Medium	5662.89	
+831	2026-05-19	May	Q2	28	Female	East	99542	Platinum	15	9	139.63	Yes	Direct	3.9	Medium	5374.6	
+832	2026-07-21	July	Q3	40	Female	North	80949	Platinum	13	10	208.11	No	Social Media	4.2	Low	18406.63	
+833	2026-09-23	September	Q3	18	Female	North	46334	Platinum	16	9	171.26	No	Email	4.3	Low	9097.67	
+834	2026-07-16	July	Q3	27	Female	West	36106	Silver	15	10	98.08	Yes	Social Media	4.7	Low	4779.09	
+835	2026-04-02	April	Q2	23	Male	East	103327	Gold	11	8	119.5	No	Direct	3.4	Medium	4044.02	
+836	2026-02-15	February	Q1	32	Female	North	147922	Bronze	9	6	88.38	No	Social Media	3.7	Medium	1598.33	
+837	2026-04-13	April	Q2	24	Male	North	99614	Gold	7	5	114.47	Yes	Email	4.4	Low	2366.74	
+838	2026-03-09	March	Q1	32	Female	East	100641	Bronze	2	2	103.84	No	Social Media	3.5	High	521.31	
+839	2026-03-07	March	Q1	70	Female	South	72903	Bronze	8	5	137.59	Yes	Email	3.8	Medium	2610.19	
+840	2026-08-10	August	Q3	59	Male	West	69538	Bronze	9	9	88.98	No	Email	2.1	High	1797.73	
+841	2026-09-11	September	Q3	67	Female	East	137505	Bronze	11	9	144.2	Yes	Social Media	3.6	Medium	3666.04	
+842	2026-06-20	June	Q2	68	Female	North	45302	Silver	7	7	159.31	No	Direct	3.3	Medium	3970.03	
+843	2026-03-23	March	Q1	55	Male	West	111146	Gold	10	7	144.08	Yes	Referral	3.3	Medium	4606.54	
+844	2026-09-13	September	Q3	51	Female	South	98717	Bronze	7	8	125.98	No	Direct	4.3	Low	5047.85	
+845	2026-03-24	March	Q1	18	Female	North	80632	Silver	9	5	110.78	No	Email	3.7	Medium	1934.56	
+846	2026-09-20	September	Q3	62	Male	North	98663	Bronze	5	4	69.13	No	Email	4.3	Medium	1211.03	
+847	2026-02-28	February	Q1	37	Male	East	110190	Gold	16	10	165.83	Yes	Social Media	4.0	Low	10444.32	
+848	2026-07-13	July	Q3	59	Male	West	41323	Bronze	4	4	72.24	No	Direct	4.1	Medium	1000.3	
+849	2026-06-15	June	Q2	51	Female	North	56916	Silver	4	5	207.12	Yes	Direct	3.4	Medium	4580.29	
+850	2026-08-08	August	Q3	45	Female	North	29354	Gold	12	8	147.61	No	Social Media	3.2	Medium	4548.38	
+851	2026-09-22	September	Q3	36	Female	South	32728	Bronze	7	5	72.67	Yes	Social Media	3.7	Medium	1303.74	
+852	2026-10-15	October	Q4	49	Male	East	77609	Bronze	10	6	155.87	No	Referral	4.1	Low	4200.52	
+853	2026-06-21	June	Q2	66	Female	West	53844	Bronze	5	3	150.59	No	Social Media	5.0	Medium	1524.34	
+854	2026-06-14	June	Q2	53	Male	East	77745	Gold	13	8	158.76	No	Direct	3.1	Medium	5576.32	
+855	2026-04-24	April	Q2	35	Male	South	34734	Bronze	17	11	129.42	Yes	Direct	3.6	Medium	5228.8	
+856	2026-04-08	April	Q2	38	Male	North	105319	Gold	6	6	100.72	Yes	Email	4.6	Low	3257.46	
+857	2026-03-25	March	Q1	69	Female	East	81992	Silver	3	3	85.22	Yes	Referral	3.0	Medium	816.77	
+858	2026-01-28	January	Q1	67	Female	South	58887	Bronze	5	3	126.65	No	Email	4.4	Medium	1227.91	
+859	2026-08-13	August	Q3	44	Female	East	145785	Silver	13	8	176.21	No	Social Media	4.1	Low	6708.68	
+860	2026-04-23	April	Q2	35	Female	South	148986	Silver	13	8	119.63	Yes	Email	4.3	Low	4320.14	
+861	2026-12-15	December	Q4	22	Male	East	94993	Silver	8	9	188.12	Yes	Social Media	2.8	High	5648.48	
+862	2026-01-06	January	Q1	23	Female	South	52385	Gold	8	7	172.12	No	Social Media	3.8	Medium	5440.36	
+863	2026-12-28	December	Q4	38	Female	East	86492	Silver	19	11	223.91	No	Email	3.1	Medium	12207.28	
+864	2026-11-21	November	Q4	64	Male	North	123348	Bronze	14	10	112.55	Yes	Referral	3.6	Medium	5934.81	
+865	2026-07-27	July	Q3	39	Female	North	104597	Bronze	7	5	137.81	Yes	Direct	5	Low	4049.92	
+866	2026-04-25	April	Q2	67	Female	East	126010	Silver	4	3	90.71	Yes	Referral	4.3	Medium	913.61	
+867	2026-02-21	February	Q1	26	Male	South	43656	Silver	7	7	173.11	No	Email	2.3	High	3148.81	
+868	2026-02-12	February	Q1	67	Male	South	137443	Silver	10	10	142.97	Yes	Social Media	4.4	Low	7100.85	
+869	2026-08-09	August	Q3	42	Female	South	81963	Bronze	5	4	101.28	No	Referral	4.2	Medium	1609.13	
+870	2026-06-20	June	Q2	56	Female	South	55312	Gold	10	8	168.13	No	Direct	3.7	Medium	7743.73	
+871	2026-11-23	November	Q4	29	Female	East	105753	Gold	10	11	151.32	No	Direct	3.9	Medium	7925.12	
+872	2026-11-18	November	Q4	20	Female	South	55788	Bronze	10	8	139.3	No	Referral	4.0	Low	7261.76	
+873	2026-06-13	June	Q2	57	Male	North	102792	Gold	10	6	107.59	No	Social Media	4.5	Low	3732.48	
+874	2026-08-25	August	Q3	43	Female	South	66610	Silver	5	6	140.91	No	Email	3.8	Medium	3735.55	
+875	2026-07-05	July	Q3	49	Female	North	104038	Gold	6	5	205.58	No	Social Media	4.3	Low	6579.22	
+876	2026-12-24	December	Q4	69	Male	South	105236	Bronze	12	9	180.1	No	Referral	3.9	Medium	8910.53	
+877	2026-01-09	January	Q1	30	Female	East	126398	Gold	6	5	133.06	No	Direct	4.3	Low	2827.76	
+878	2026-06-24	June	Q2	43	Male	East	97883	Gold	12	10	150.96	No	Referral	4.3	Low	10242.38	
+879	2026-01-09	January	Q1	36	Male	North	88376	Bronze	6	4	56.93	No	Social Media	3.7	Medium	856.44	
+880	2026-12-06	December	Q4	53	Male	North	38703	Bronze	15	10	141.86	Yes	Direct	3.2	Medium	6506.28	
+881	2026-12-30	December	Q4	31	Female	South	123848	Bronze	10	11	156.84	No	Social Media	3.7	Medium	9735.83	
+882	2026-08-05	August	Q3	28	Female	East	86426	Gold	13	9	139.57	No	Direct	3.3	Medium	6176.75	
+883	2026-10-17	October	Q4	49	Female	West	141909	Bronze	5	3	93.5	No	Referral	4.0	Medium	953.63	
+884	2026-10-23	October	Q4	54	Male	South	134320	Platinum	11	10	160.13	Yes	Referral	4.4	Low	12790.63	
+885	2026-07-28	July	Q3	61	Male	South	118889	Silver	7	6	200.54	No	Direct	3.4	Medium	6016.88	
+886	2026-03-01	March	Q1	23	Female	North	119676	Bronze	5	5	121.99	Yes	Referral	3.9	Medium	1635.9	
+887	2026-10-23	October	Q4	25	Female	East	42199	Silver	1	1	140.34	No	Referral	2.9	High	317.14	
+888	2026-08-24	August	Q3	40	Male	South	106638	Silver	18	10	171.02	No	Referral	3.1	Medium	8038.27	
+889	2026-08-27	August	Q3	28	Male	East	119339	Bronze	6	7	132.59	No	Social Media	4.0	Low	3907.32	
+890	2026-10-30	October	Q4	35	Female	South	46210	Silver	8	9	151.39	Yes	Social Media	4.2	Low	7663.77	
+891	2026-12-02	December	Q4	29	Male	East	77751	Gold	21	12	187.01	Yes	Referral	4.8	Low	15551.2	
+892	2026-04-12	April	Q2	49	Male	South	139821	Gold	8	9	134.78	Yes	Email	4.1	Low	4532.93	
+893	2026-02-05	February	Q1	60	Male	South	138377	Bronze	8	9	138.42	No	Social Media	3.6	Medium	4707.05	
+894	2026-03-03	March	Q1	28	Female	North	75059	Bronze	9	5	118.09	Yes	Social Media	3.5	Medium	1441.84	
+895	2026-09-04	September	Q3	46	Female	North	34864	Bronze	4	3	111.02	Yes	Direct	3.3	Medium	957.82	
+896	2026-04-03	April	Q2	52	Male	South	130417	Bronze	6	5	85.94	Yes	Social Media	3.5	Medium	999.48	
+897	2026-06-25	June	Q2	43	Male	South	54913	Silver	7	5	215.94	Yes	Social Media	4.3	Low	4607.63	
+898	2026-07-19	July	Q3	69	Female	East	126448	Silver	10	7	102.5	Yes	Email	4.3	Low	2880.46	
+899	2026-06-07	June	Q2	59	Female	South	31623	Bronze	9	8	136.74	No	Referral	3.7	Medium	4474.23	
+900	2026-02-08	February	Q1	70	Male	North	30839	Bronze	8	7	116.04	No	Direct	4.4	Low	3567.53	
+901	2026-09-22	September	Q3	59	Female	South	141740	Silver	6	7	154.17	No	Direct	2.9	High	2629.63	
+902	2026-06-30	June	Q2	64	Female	West	75734	Bronze	1	1	54.92	Yes	Email	4.1	High	183.52	
+903	2026-01-27	January	Q1	42	Male	North	99725	Gold	7	6	117.99	No	Direct	4.2	Low	3667.73	
+904	2026-09-16	September	Q3	29	Male	North	126473	Bronze	7	6	144.64	Yes	Social Media	4.2	Low	2883.01	
+905	2026-01-29	January	Q1	31	Male	South	119326	Gold	4	5	113.96	No	Direct	3.5	Medium	2009.03	
+906	2026-12-29	December	Q4	27	Female	East	127863	Silver	9	9	165.68	Yes	Email	3.4	Medium	6050.9	
+907	2026-09-06	September	Q3	23	Female	East	37658	Platinum	9	8	164.72	Yes	Referral	3.9	Medium	8181.92	
+908	2026-07-02	July	Q3	18	Female	East	38600	Gold	16	10	179.43	No	Direct	2.0	High	4891.27	
+909	2026-03-28	March	Q1	64	Female	East	70258	Silver	2	2	87.89	No	Direct	3.5	High	472.67	
+910	2026-08-25	August	Q3	22	Female	North	98094	Gold	8	8	126.12	No	Email	3.2	Medium	3653.1	
+911	2026-02-16	February	Q1	18	Male	North	35642	Bronze	9	6	124.37	Yes	Referral	4.4	Low	3618.02	
+912	2026-05-23	May	Q2	67	Male	North	64151	Gold	6	6	124.77	No	Referral	3.9	Medium	2504.45	
+913	2026-02-10	February	Q1	67	Male	East	105841	Bronze	8	6	155.59	No	Social Media	3.7	Medium	3967.85	
+914	2026-12-18	December	Q4	25	Male	South	131618	Bronze	8	7	201.5	Yes	Email	4.1	Low	8463.86	
+915	2026-09-14	September	Q3	28	Female	West	26965	Bronze	5	6	141.42	No	Email	4.1	Low	4263.34	
+916	2026-02-06	February	Q1	51	Male	West	95052	Silver	6	7	160.42	No	Referral	4.0	Low	5727.12	
+917	2026-10-30	October	Q4	68	Male	East	36324	Bronze	9	9	186.54	Yes	Referral	4.5	Low	7896.97	
+918	2026-05-16	May	Q2	62	Male	East	45721	Bronze	12	7	95.1	No	Social Media	3.5	Medium	1661.64	
+919	2026-12-22	December	Q4	55	Female	South	94545	Bronze	11	7	116.12	No	Referral	3.9	Medium	3638.75	
+920	2026-02-19	February	Q1	53	Female	South	38143	Bronze	11	6	172.68	Yes	Social Media	4.9	Low	4217.61	
+921	2026-08-24	August	Q3	45	Female	West	92773	Platinum	7	8	201.91	No	Email	3.9	Medium	7385.37	
+922	2026-03-04	March	Q1	69	Female	East	58351	Bronze	5	4	126.45	No	Social Media	3.3	Medium	1272.93	
+923	2026-03-17	March	Q1	49	Male	West	124349	Bronze	6	6	99.09	No	Direct	2.5	High	1370.56	
+924	2026-01-31	January	Q1	61	Female	East	70454	Bronze	11	7	129.63	No	Social Media	3.8	Medium	2693.31	
+925	2026-04-02	April	Q2	62	Female	East	65133	Gold	14	8	147.05	No	Direct	4.1	Low	7129.39	
+926	2026-07-15	July	Q3	36	Female	West	117320	Bronze	3	3	99.41	Yes	Direct	4.3	Medium	1059.49	
+927	2026-09-10	September	Q3	63	Male	West	93739	Bronze	3	3	131.29	Yes	Referral	3.1	Medium	960.1	
+928	2026-09-12	September	Q3	35	Female	North	131034	Bronze	9	6	135.32	No	Referral	3.4	Medium	2097.44	
+929	2026-02-06	February	Q1	18	Female	South	103058	Bronze	3	3	46.47	Yes	Social Media	3.7	Medium	617.7	
+930	2026-11-29	November	Q4	54	Male	South	40182	Bronze	9	8	170.08	No	Social Media	3.0	Medium	6597.46	
+931	2026-04-11	April	Q2	58	Male	South	73321	Bronze	5	4	68.95	No	Referral	2.4	High	554.6	
+932	2026-11-17	November	Q4	22	Female	East	89013	Bronze	15	9	122.6	Yes	Email	4.0	Low	4565.08	
+933	2026-07-14	July	Q3	25	Male	West	140140	Gold	11	6	111.55	No	Social Media	3.9	Medium	3764.33	
+934	2026-03-30	March	Q1	24	Male	South	103806	Silver	12	7	134.39	No	Direct	3.9	Medium	3165.38	
+935	2026-05-31	May	Q2	51	Female	West	29648	Gold	15	10	166.25	No	Social Media	4.0	Low	7647.21	
+936	2026-08-12	August	Q3	30	Male	East	100965	Gold	11	8	145.98	No	Email	3.8	Medium	4921.31	
+937	2026-02-20	February	Q1	51	Male	East	75572	Platinum	11	8	174.57	Yes	Referral	4.2	Low	11080.65	
+938	2026-05-29	May	Q2	18	Male	West	25396	Bronze	5	5	145.15	Yes	Social Media	2.6	High	1597.13	
+939	2026-08-17	August	Q3	32	Female	North	136544	Silver	9	7	124.59	Yes	Referral	4.0	Low	3507.34	
+940	2026-08-08	August	Q3	40	Male	East	51736	Bronze	5	4	105.81	Yes	Email	3.5	Medium	1472.84	
+941	2026-08-27	August	Q3	20	Female	West	97655	Gold	8	7	158.32	No	Social Media	3.6	Medium	5401.58	
+942	2026-05-27	May	Q2	26	Male	North	124365	Bronze	6	6	108.83	No	Direct	4.7	Low	2526.48	
+943	2026-07-27	July	Q3	56	Male	North	73210	Silver	13	11	131.27	No	Social Media	4.0	Low	8917.85	
+944	2026-06-01	June	Q2	65	Male	North	111973	Bronze	10	9	145.49	Yes	Email	3.4	Medium	4829.45	
+945	2026-10-23	October	Q4	32	Male	West	130255	Bronze	8	7	128.64	No	Email	3.1	Medium	3643.62	
+946	2026-01-25	January	Q1	47	Male	East	57241	Bronze	4	3	146.26	No	Referral	4.6	Medium	1435.77	
+947	2026-01-20	January	Q1	53	Male	West	123127	Silver	7	4	155.83	Yes	Social Media	3.6	Medium	2755.92	
+948	2026-04-01	April	Q2	56	Female	North	61918	Silver	11	9	60.26	No	Social Media	4.5	Low	3291.43	
+949	2026-04-24	April	Q2	38	Female	East	118594	Silver	12	8	138.52	Yes	Social Media	3.9	Medium	3530.93	
+950	2026-04-02	April	Q2	25	Male	South	69191	Bronze	4	3	123.12	No	Direct	3.4	Medium	1282.52	
+951	2026-12-19	December	Q4	34	Male	South	101871	Bronze	12	8	108.03	No	Email	4.0	Low	4563.26	
+952	2026-05-19	May	Q2	51	Male	North	46228	Bronze	7	5	123.98	No	Social Media	3.9	Medium	2677.4	
+953	2026-05-19	May	Q2	39	Male	West	47716	Bronze	8	6	110.0	Yes	Social Media	4.0	Low	3356.28	
+954	2026-03-24	March	Q1	41	Male	South	97929	Silver	7	5	69.12	Yes	Email	5	Low	1647.24	
+955	2026-04-01	April	Q2	62	Female	North	50502	Bronze	9	7	70.23	No	Email	2.7	High	895.71	
+956	2026-11-10	November	Q4	68	Female	West	132412	Gold	9	6	236.35	Yes	Social Media	4.2	Low	10451.46	
+957	2026-05-20	May	Q2	49	Female	South	60380	Silver	5	3	161.46	No	Referral	3.1	Medium	2128.89	
+958	2026-04-01	April	Q2	66	Male	North	95211	Platinum	4	5	108.5	No	Referral	3.3	Medium	2566.08	
+959	2026-07-29	July	Q3	51	Male	North	136835	Silver	8	6	153.49	No	Email	5	Low	4583.34	
+960	2026-10-30	October	Q4	59	Male	North	142842	Silver	7	4	108.62	Yes	Referral	3.6	Medium	1295.74	
+961	2026-05-06	May	Q2	57	Female	North	97019	Bronze	9	7	150.42	No	Email	3.2	Medium	2655.94	
+962	2026-11-15	November	Q4	23	Male	East	74269	Platinum	16	12	213.57	No	Referral	3.4	Medium	14839.24	
+963	2026-07-08	July	Q3	41	Male	East	46094	Bronze	5	6	101.17	No	Email	3.6	Medium	1838.56	
+964	2026-07-01	July	Q3	37	Male	East	136076	Silver	8	8	140.34	No	Referral	4.1	Low	7581.12	
+965	2026-02-03	February	Q1	25	Female	North	119263	Gold	7	6	188.69	Yes	Referral	4.1	Low	5420.23	
+966	2026-10-24	October	Q4	58	Male	East	46894	Silver	6	5	103.5	No	Referral	3.1	Medium	1497.78	
+967	2026-07-12	July	Q3	25	Female	West	47416	Gold	10	8	180.46	No	Social Media	4.3	Low	10202.81	
+968	2026-04-21	April	Q2	30	Male	East	130127	Bronze	10	6	109.51	No	Direct	4.5	Low	3382.92	
+969	2026-01-03	January	Q1	49	Male	South	25788	Bronze	6	5	107.35	No	Direct	4.6	Low	2213.84	
+970	2026-09-23	September	Q3	20	Female	North	64718	Gold	8	7	221.1	No	Social Media	3.8	Medium	7637.2	
+971	2026-11-29	November	Q4	52	Female	South	49514	Silver	12	8	151.2	No	Referral	3.3	Medium	5602.33	
+972	2026-08-31	August	Q3	50	Female	North	78938	Gold	10	6	214.18	No	Referral	5.0	Low	8892.48	
+973	2026-02-25	February	Q1	51	Male	West	141032	Platinum	17	10	176.86	Yes	Social Media	4.1	Low	15902.07	
+974	2026-11-14	November	Q4	27	Female	East	82370	Bronze	14	9	185.53	No	Email	3.2	Medium	7133.46	
+975	2026-10-26	October	Q4	45	Male	West	111022	Silver	11	10	154.63	No	Direct	5.0	Low	9971.32	
+976	2026-03-23	March	Q1	42	Male	South	122972	Bronze	7	8	78.27	No	Social Media	3.4	Medium	2465.55	
+977	2026-12-06	December	Q4	40	Female	South	110413	Silver	10	9	164.28	Yes	Direct	3.6	Medium	8308.51	
+978	2026-03-18	March	Q1	44	Female	North	52223	Platinum	10	6	133.68	Yes	Direct	4.3	Low	6230.18	
+979	2026-10-07	October	Q4	65	Male	South	34732	Bronze	6	6	223.2	Yes	Email	3.7	Medium	4818.55	
+980	2026-11-20	November	Q4	52	Male	West	101786	Bronze	12	7	172.11	No	Email	3.0	Medium	5971.17	
+981	2026-08-23	August	Q3	49	Female	South	126529	Gold	9	5	196.85	No	Email	4.7	Low	5824.55	
+982	2026-04-03	April	Q2	27	Male	West	73108	Bronze	11	7	106.38	No	Social Media	3.9	Medium	2709.65	
+983	2026-12-29	December	Q4	20	Male	North	124477	Bronze	6	6	147.3	No	Email	4.3	Low	5483.48	
+984	2026-09-11	September	Q3	50	Male	North	145190	Bronze	10	6	151.91	Yes	Email	3.3	Medium	2323.86	
+985	2026-10-07	October	Q4	52	Female	South	36908	Silver	9	8	54.67	Yes	Direct	3.5	Medium	1849.13	
+986	2026-10-25	October	Q4	47	Female	South	71474	Bronze	12	7	112.38	Yes	Social Media	4.6	Low	3999.18	
+987	2026-11-09	November	Q4	31	Female	West	61741	Silver	12	7	174.4	No	Direct	4.1	Low	7066.67	
+988	2026-06-06	June	Q2	58	Male	West	94817	Bronze	8	5	149.76	No	Referral	4.4	Low	4521.15	
+989	2026-08-25	August	Q3	38	Female	West	135327	Gold	8	8	161.84	Yes	Direct	3.6	Medium	6042.12	
+990	2026-11-23	November	Q4	24	Male	North	60538	Bronze	11	9	121.94	Yes	Social Media	4.0	Low	7245.51	
+991	2026-06-26	June	Q2	53	Female	East	97522	Bronze	8	5	134.21	Yes	Social Media	4.4	Low	3828.4	
+992	2026-06-23	June	Q2	36	Male	North	94447	Silver	9	7	154.49	Yes	Direct	1.9	High	2315.05	
+993	2026-01-10	January	Q1	41	Male	South	148765	Bronze	4	4	117.27	Yes	Direct	3.4	Medium	1483.93	
+994	2026-09-13	September	Q3	33	Male	West	63555	Silver	9	5	155.93	No	Email	2.5	High	2249.85	
+995	2026-04-09	April	Q2	53	Female	North	120817	Platinum	6	4	146.44	No	Direct	3.3	Medium	2796.61	
+996	2026-01-08	January	Q1	19	Female	West	120730	Silver	11	8	94.5	Yes	Social Media	5	Low	4512.29	
+997	2026-06-25	June	Q2	53	Male	North	46988	Gold	7	8	123.14	No	Direct	3.1	Medium	4302.73	
+998	2026-03-17	March	Q1	32	Female	West	62414	Bronze	8	8	149.28	No	Social Media	3.9	Medium	4215.6	
+999	2026-08-26	August	Q3	19	Male	North	85168	Bronze	5	6	135.52	No	Referral	3.7	Medium	3733.66	
+1000	2026-04-21	April	Q2	22	Female	South	108910	Gold	4	3	137.7	No	Direct	4.2	Medium	1448.9	
