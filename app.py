@@ -8,6 +8,35 @@ app = Flask(__name__)
 model = joblib.load("models/best_ltv_model.pkl")
 
 
+# Model performance results
+model_results = [
+    {
+        "model": "Gradient Boosting",
+        "r2": 0.8722,
+        "mae": 740.87,
+        "rmse": 1253.85
+    },
+    {
+        "model": "Random Forest",
+        "r2": 0.8412,
+        "mae": 843.05,
+        "rmse": 1397.57
+    },
+    {
+        "model": "Linear Regression",
+        "r2": 0.8180,
+        "mae": 1107.91,
+        "rmse": 1496.40
+    },
+    {
+        "model": "Decision Tree",
+        "r2": 0.7770,
+        "mae": 1060.11,
+        "rmse": 1656.29
+    }
+]
+
+
 @app.route("/", methods=["GET", "POST"])
 def home():
 
@@ -57,9 +86,10 @@ def home():
     return render_template(
         "index.html",
         prediction=prediction,
-        error=error
+        error=error,
+        model_results=model_results
     )
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5000, debug=False)

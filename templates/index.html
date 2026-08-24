@@ -186,5 +186,46 @@
 
 </div>
 
+<section class="model-performance">
+
+    <h2>Model Performance</h2>
+
+    <p>
+        Four machine learning models were trained and evaluated
+        to determine the best model for Customer Lifetime Value prediction.
+    </p>
+
+    <div class="best-model">
+        <h3>Best Model: Gradient Boosting</h3>
+        <p>R² Score: <strong>87.22%</strong></p>
+        <p>MAE: <strong>740.87</strong></p>
+        <p>RMSE: <strong>1253.85</strong></p>
+    </div>
+
+    <h3>Model Comparison</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>R² Score</th>
+                <th>MAE</th>
+                <th>RMSE</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for result in model_results %}
+            <tr>
+                <td>{{ result.model }}</td>
+                <td>{{ "%.2f"|format(result.r2 * 100) }}%</td>
+                <td>{{ "%.2f"|format(result.mae) }}</td>
+                <td>{{ "%.2f"|format(result.rmse) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</section>
 </body>
 </html>

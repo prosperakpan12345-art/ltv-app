@@ -11,7 +11,7 @@ body {
     background: white;
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -81,4 +81,55 @@ button:hover {
     padding: 15px;
     background: #ffe6e6;
     color: #900;
+    border-radius: 8px;
+}
+
+/* Model Performance Section */
+
+.model-performance {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.model-performance h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.model-performance > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.best-model {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background: #f4f6f8;
+}
+
+.best-model h3 {
+    margin-top: 0;
+}
+
+.model-performance table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.model-performance th,
+.model-performance td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.model-performance th {
+    font-weight: bold;
 }
