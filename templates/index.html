@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Customer Lifetime Value Predictor</title>
+    <title>Customer Lifetime Value</title>
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
@@ -13,219 +13,585 @@
 
 <body>
 
-<div class="container">
+<header class="dashboard-header">
+    <h1>Machine Learning Prediction Dashboard</h1>
+</header>
+  
+<main class="dashboard-container">
 
-    <h1>Customer Lifetime Value Predictor</h1>
 
-    <p class="subtitle">
-        Predict the lifetime value of a customer using Machine Learning
-    </p>
+    <!-- =========================
+         METRIC CARDS
+    ========================== -->
 
-    <form method="POST">
+    <section class="metrics-grid">
 
-        <div class="form-grid">
+        <div class="metric-card blue">
+            <div class="metric-icon">R²</div>
 
             <div>
-                <label>Month</label>
-                <select name="Month" required>
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
+                <p>Best R² Score</p>
+                <h2>87.22%</h2>
+                <span>Gradient Boosting</span>
+            </div>
+        </div>
+
+
+        <div class="metric-card green">
+            <div class="metric-icon">✓</div>
+
+            <div>
+                <p>Best Model</p>
+                <h2>Gradient</h2>
+                <span>Boosting</span>
+            </div>
+        </div>
+
+
+        <div class="metric-card orange">
+            <div class="metric-icon">MAE</div>
+
+            <div>
+                <p>Mean Absolute Error</p>
+                <h2>740.87</h2>
+                <span>Lower is better</span>4
+            </div>
+        </div>
+
+
+        <div class="metric-card purple">
+            <div class="metric-icon">RMSE</div>
+
+            <div>
+                <p>Root Mean Square Error</p>
+                <h2>1253.85</h2>
+                <span>Lower is better</span>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PREDICTION SECTION
+    ========================== -->
+
+    <section class="dashboard-card">
+
+        <div class="section-title">
+
+            <div>
+                <h2>Customer Lifetime Value Prediction</h2>
+
+                <p>
+                    Enter customer information to estimate their
+                    lifetime value using the Gradient Boosting model.
+                </p>
             </div>
 
-            <div>
-                <label>Season</label>
-                <select name="Season" required>
-                    <option value="Q1">Q1</option>
-                    <option value="Q2">Q2</option>
-                    <option value="Q3">Q3</option>
-                    <option value="Q4">Q4</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Age</label>
-                <input type="number" name="Age" required>
-            </div>
-
-            <div>
-                <label>Gender</label>
-                <select name="Gender" required>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Region</label>
-                <select name="Region" required>
-                    <option value="North">North</option>
-                    <option value="South">South</option>
-                    <option value="East">East</option>
-                    <option value="West">West</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Income</label>
-                <input type="number" name="Income" required>
-            </div>
-
-            <div>
-                <label>Membership</label>
-                <select name="Membership" required>
-                    <option value="Bronze">Bronze</option>
-                    <option value="Silver">Silver</option>
-                    <option value="Gold">Gold</option>
-                    <option value="Platinum">Platinum</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Products Purchased</label>
-                <input type="number"
-                       name="ProductsPurchased"
-                       required>
-            </div>
-
-            <div>
-                <label>Purchase Frequency</label>
-                <input type="number"
-                       name="PurchaseFrequency"
-                       required>
-            </div>
-
-            <div>
-                <label>Average Order Value</label>
-                <input type="number"
-                       step="0.01"
-                       name="AverageOrderValue"
-                       required>
-            </div>
-
-            <div>
-                <label>Discount Used</label>
-                <select name="DiscountUsed" required>
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Marketing Channel</label>
-                <select name="MarketingChannel" required>
-                    <option value="Social Media">Social Media</option>
-                    <option value="Email">Email</option>
-                    <option value="Direct">Direct</option>
-                    <option value="Online">Online</option>
-                </select>
-            </div>
-
-            <div>
-                <label>Satisfaction Score</label>
-                <input type="number"
-                       step="0.1"
-                       min="0"
-                       max="5"
-                       name="SatisfactionScore"
-                       required>
-            </div>
-
-            <div>
-                <label>Churn Risk</label>
-                <select name="ChurnRisk" required>
-                    <option value="Low">Low</option>
-                    <option value="Medium">Medium</option>
-                    <option value="High">High</option>
-                </select>
+            <div class="model-badge">
+                Gradient Boosting
             </div>
 
         </div>
 
-        <button type="submit">
-            Predict Customer Lifetime Value
-        </button>
 
-    </form>
+        <form method="POST">
+
+            <div class="form-grid">
+
+                <div>
+                    <label>Month</label>
+
+                    <select name="Month" required>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="August">August</option>
+                        <option value="September">September</option>
+                        <option value="October">October</option>
+                        <option value="November">November</option>
+                        <option value="December">December</option>
+                    </select>
+                </div>
 
 
-    {% if prediction is not none %}
+                <div>
+                    <label>Season</label>
 
-    <div class="result">
+                    <select name="Season" required>
+                        <option value="Q1">Q1</option>
+                        <option value="Q2">Q2</option>
+                        <option value="Q3">Q3</option>
+                        <option value="Q4">Q4</option>
+                    </select>
+                </div>
 
-        <h2>Prediction Result</h2>
 
-        <p>Predicted Customer Lifetime Value</p>
+                <div>
+                    <label>Age</label>
+                    <input type="number" name="Age" required>
+                </div>
 
-        <div class="value">
-            {{ "%.2f"|format(prediction) }}
+
+                <div>
+                    <label>Gender</label>
+
+                    <select name="Gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label>Region</label>
+
+                    <select name="Region" required>
+                        <option value="North">North</option>
+                        <option value="South">South</option>
+                        <option value="East">East</option>
+                        <option value="West">West</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label>Income</label>
+                    <input type="number" name="Income" required>
+                </div>
+
+
+                <div>
+                    <label>Membership</label>
+
+                    <select name="Membership" required>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label>Products Purchased</label>
+
+                    <input type="number"
+                           name="ProductsPurchased"
+                           required>
+                </div>
+
+
+                <div>
+                    <label>Purchase Frequency</label>
+
+                    <input type="number"
+                           name="PurchaseFrequency"
+                           required>
+                </div>
+
+
+                <div>
+                    <label>Average Order Value</label>
+
+                    <input type="number"
+                           step="0.01"
+                           name="AverageOrderValue"
+                           required>
+                </div>
+
+
+                <div>
+                    <label>Discount Used</label>
+
+                    <select name="DiscountUsed" required>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label>Marketing Channel</label>
+
+                    <select name="MarketingChannel" required>
+                        <option value="Social Media">Social Media</option>
+                        <option value="Email">Email</option>
+                        <option value="Direct">Direct</option>
+                        <option value="Online">Online</option>
+                    </select>
+                </div>
+
+
+                <div>
+                    <label>Satisfaction Score</label>
+
+                    <input type="number"
+                           step="0.1"
+                           min="0"
+                           max="5"
+                           name="SatisfactionScore"
+                           required>
+                </div>
+
+
+                <div>
+                    <label>Churn Risk</label>
+
+                    <select name="ChurnRisk" required>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <button class="predict-button" type="submit">
+                Predict Customer Lifetime Value
+            </button>
+
+        </form>
+
+
+        {% if prediction is not none %}
+
+        <div class="prediction-result">
+
+            <div>
+                <span>Prediction Result</span>
+                <h3>Predicted Customer Lifetime Value</h3>
+            </div>
+
+            <div class="prediction-value">
+                {{ "%.2f"|format(prediction) }}
+            </div>
+
+        </div>
+
+        {% endif %}
+
+
+        {% if error %}
+
+        <div class="error">
+            <strong>Error:</strong> {{ error }}
+        </div>
+
+        {% endif %}
+
+    </section>
+
+
+    <!-- =========================
+         MODEL PERFORMANCE
+    ========================== -->
+
+    <section class="dashboard-card">
+
+        <div class="section-title">
+
+            <div>
+                <h2>Model Performance</h2>
+
+                <p>
+                    Comparison of four machine learning models
+                    trained for Customer Lifetime Value prediction.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- R2 CHART -->
+
+        <!-- MODEL COMPARISON CHARTS -->
+
+<div class="charts-grid">
+
+    <!-- R2 SCORE -->
+
+    <div class="chart-card">
+
+        <h3>R² Score</h3>
+
+        <p class="chart-description">
+            Higher values indicate better predictive performance.
+        </p>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Gradient Boosting</span>
+                <strong>87.22%</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill r2-best" style="width: 87.22%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Random Forest</span>
+                <strong>84.12%</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill r2" style="width: 84.12%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Linear Regression</span>
+                <strong>81.80%</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill r2" style="width: 81.80%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Decision Tree</span>
+                <strong>77.70%</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill r2" style="width: 77.70%;"></div>
+            </div>
+
         </div>
 
     </div>
 
-    {% endif %}
 
+    <!-- MAE -->
 
-    {% if error %}
+    <div class="chart-card">
 
-    <div class="error">
-        <strong>Error:</strong> {{ error }}
+        <h3>MAE Comparison</h3>
+
+        <p class="chart-description">
+            Lower values indicate smaller prediction errors.
+        </p>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Gradient Boosting</span>
+                <strong>740.87</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill mae-best" style="width: 67%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Random Forest</span>
+                <strong>843.05</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill mae" style="width: 76%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Linear Regression</span>
+                <strong>1107.91</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill mae" style="width: 100%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Decision Tree</span>
+                <strong>1060.11</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill mae" style="width: 96%;"></div>
+            </div>
+
+        </div>
+
     </div>
 
-    {% endif %}
+
+    <!-- RMSE -->
+
+    <div class="chart-card">
+
+        <h3>RMSE Comparison</h3>
+
+        <p class="chart-description">
+            Lower values indicate smaller prediction errors.
+        </p>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Gradient Boosting</span>
+                <strong>1253.85</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill rmse-best" style="width: 76%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Random Forest</span>
+                <strong>1397.57</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill rmse" style="width: 84%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Linear Regression</span>
+                <strong>1496.40</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill rmse" style="width: 90%;"></div>
+            </div>
+
+        </div>
+
+        <div class="metric-bar">
+
+            <div class="chart-label">
+                <span>Decision Tree</span>
+                <strong>1656.29</strong>
+            </div>
+
+            <div class="chart-background">
+                <div class="chart-fill rmse" style="width: 100%;"></div>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
-<section class="model-performance">
+        <!-- MODEL TABLE -->
 
-    <h2>Model Performance</h2>
+        <div class="table-container">
 
-    <p>
-        Four machine learning models were trained and evaluated
-        to determine the best model for Customer Lifetime Value prediction.
-    </p>
+            <h3>Detailed Model Comparison</h3>
 
-    <div class="best-model">
-        <h3>Best Model: Gradient Boosting</h3>
-        <p>R² Score: <strong>87.22%</strong></p>
-        <p>MAE: <strong>740.87</strong></p>
-        <p>RMSE: <strong>1253.85</strong></p>
-    </div>
+            <table>
 
-    <h3>Model Comparison</h3>
+                <thead>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Model</th>
-                <th>R² Score</th>
-                <th>MAE</th>
-                <th>RMSE</th>
-            </tr>
-        </thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>R² Score</th>
+                        <th>MAE</th>
+                        <th>RMSE</th>
+                    </tr>
 
-        <tbody>
-            {% for result in model_results %}
-            <tr>
-                <td>{{ result.model }}</td>
-                <td>{{ "%.2f"|format(result.r2 * 100) }}%</td>
-                <td>{{ "%.2f"|format(result.mae) }}</td>
-                <td>{{ "%.2f"|format(result.rmse) }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+                </thead>
 
-</section>
+
+                <tbody>
+
+                    {% for result in model_results %}
+
+                    <tr
+                        {% if result.model == 'Gradient Boosting' %}
+                        class="best-row"
+                        {% endif %}
+                    >
+
+                        <td>
+                            <strong>{{ result.model }}</strong>
+
+                            {% if result.model == 'Gradient Boosting' %}
+                            <span class="best-tag">BEST</span>
+                            {% endif %}
+                        </td>
+
+                        <td>
+                            {{ "%.2f"|format(result.r2 * 100) }}%
+                        </td>
+
+                        <td>
+                            {{ "%.2f"|format(result.mae) }}
+                        </td>
+
+                        <td>
+                            {{ "%.2f"|format(result.rmse) }}
+                        </td>
+
+                    </tr>
+
+                    {% endfor %}
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            Customer Lifetime Value Prediction System
+        </p>
+
+        <span>
+            Built with Python • Flask • Scikit-learn
+        </span>
+
+    </footer>
+
+
+</main>
+
 </body>
 </html>

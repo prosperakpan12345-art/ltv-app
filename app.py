@@ -7,34 +7,11 @@ app = Flask(__name__)
 # Load the trained model
 model = joblib.load("models/best_ltv_model.pkl")
 
+# Load model performance results
+model_results_df = pd.read_csv("models/model_results.csv")
 
 # Model performance results
-model_results = [
-    {
-        "model": "Gradient Boosting",
-        "r2": 0.8722,
-        "mae": 740.87,
-        "rmse": 1253.85
-    },
-    {
-        "model": "Random Forest",
-        "r2": 0.8412,
-        "mae": 843.05,
-        "rmse": 1397.57
-    },
-    {
-        "model": "Linear Regression",
-        "r2": 0.8180,
-        "mae": 1107.91,
-        "rmse": 1496.40
-    },
-    {
-        "model": "Decision Tree",
-        "r2": 0.7770,
-        "mae": 1060.11,
-        "rmse": 1656.29
-    }
-]
+model_results = model_results_df.to_dict("records")
 
 
 @app.route("/", methods=["GET", "POST"])
@@ -46,9 +23,8 @@ def home():
     if request.method == "POST":
 
         try:
-            # Get information from the form
+
             customer = pd.DataFrame([{
-                "CustomerID": 9999,
                 "Month": request.form["Month"],
                 "Season": request.form["Season"],
                 "Age": float(request.form["Age"]),
@@ -73,10 +49,6 @@ def home():
                 "ChurnRisk": request.form["ChurnRisk"]
             }])
 
-            # Remove CustomerID because it was not used
-            # as a prediction feature during training
-            customer = customer.drop(columns=["CustomerID"])
-
             # Make prediction
             prediction = model.predict(customer)[0]
 
@@ -91,5 +63,7 @@ def home():
     )
 
 
+
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=False)
+        
