@@ -542,7 +542,7 @@
                     >
 
                         <td>
-                            <strong>{{ result.model }}</strong>
+                            <strong>{{ result.Model }}</strong>
 
                             {% if result.model == 'Gradient Boosting' %}
                             <span class="best-tag">BEST</span>
@@ -550,15 +550,15 @@
                         </td>
 
                         <td>
-                            {{ "%.2f"|format(result.r2 * 100) }}%
+                            {{ "%.2f"|format(result.R2 * 100) }}%
                         </td>
 
                         <td>
-                            {{ "%.2f"|format(result.mae) }}
+                            {{ "%.2f"|format(result.MAE) }}
                         </td>
 
                         <td>
-                            {{ "%.2f"|format(result.rmse) }}
+                            {{ "%.2f"|format(result.RMSE) }}
                         </td>
 
                     </tr>
