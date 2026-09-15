@@ -54,7 +54,7 @@
             <div>
                 <p>Mean Absolute Error</p>
                 <h2>740.87</h2>
-                <span>Lower is better</span>4
+                <span>Lower is better</span>
             </div>
         </div>
 
@@ -260,31 +260,45 @@
         </form>
 
 
-        {% if prediction is not none %}
+    {% if prediction is not none %}
 
-        <div class="prediction-result">
+    <div class="prediction-result">
 
-            <div>
-                <span>Prediction Result</span>
-                <h3>Predicted Customer Lifetime Value</h3>
-            </div>
+        <div class="prediction-info">
 
-            <div class="prediction-value">
-                {{ "%.2f"|format(prediction) }}
-            </div>
+        <span class="prediction-label">
+            Prediction Result
+        </span>
 
+        <h3>
+            Predicted Customer Lifetime Value
+        </h3>
+
+        <p>
+            This is the estimated value this customer may generate
+            over their relationship with the business.
+        </p>
+
+        <small>
+            Prediction generated using the Gradient Boosting model.
+        </small>
+
+    </div>
+
+    <div class="prediction-value-container">
+
+        <span class="prediction-currency">#</span>
+
+        <div class="prediction-value">
+            #{{ "%.2f"|format(prediction) }}
         </div>
 
-        {% endif %}
+    </div>
 
+</div>
 
-        {% if error %}
+{% endif %}
 
-        <div class="error">
-            <strong>Error:</strong> {{ error }}
-        </div>
-
-        {% endif %}
 
     </section>
 
@@ -536,7 +550,7 @@
                     {% for result in model_results %}
 
                     <tr
-                        {% if result.model == 'Gradient Boosting' %}
+                        {% if result.Model == 'Gradient Boosting' %}
                         class="best-row"
                         {% endif %}
                     >
@@ -544,7 +558,7 @@
                         <td>
                             <strong>{{ result.Model }}</strong>
 
-                            {% if result.model == 'Gradient Boosting' %}
+                            {% if result.Model == 'Gradient Boosting' %}
                             <span class="best-tag">BEST</span>
                             {% endif %}
                         </td>
