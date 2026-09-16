@@ -264,20 +264,15 @@
 
     <div class="prediction-result">
 
-        <div class="prediction-info">
+        <div>
+            <span>Prediction Result</span>
 
-        <span class="prediction-label">
-            Prediction Result
-        </span>
+            <h3>Predicted Customer Lifetime Value</h3>
 
-        <h3>
-            Predicted Customer Lifetime Value
-        </h3>
-
-        <p>
-            This is the estimated value this customer may generate
-            over their relationship with the business.
-        </p>
+            <p>
+                This is the estimated value this customer may generate
+                over their relationship with the business.
+            </p>
 
         <small>
             Prediction generated using the Gradient Boosting model.
@@ -285,14 +280,8 @@
 
     </div>
 
-    <div class="prediction-value-container">
-
-        <span class="prediction-currency">#</span>
-
-        <div class="prediction-value">
-            #{{ "%.2f"|format(prediction) }}
-        </div>
-
+    <div class="prediction-value">
+        #{{ "%.2f"|format(prediction) }}
     </div>
 
 </div>
@@ -327,7 +316,7 @@
 
         <!-- MODEL COMPARISON CHARTS -->
 
-<div class="charts-grid">
+<div class="charts-grid">  
 
     <!-- R2 SCORE -->
 
@@ -337,20 +326,29 @@
 
         <p class="chart-description">
             Higher values indicate better predictive performance.
-        </p>
+        </p> 
 
         <div class="metric-bar">
-
             <div class="chart-label">
                 <span>Gradient Boosting</span>
-                <strong>87.22%</strong>
+                <strong>87.22%</strong>   
             </div>
 
             <div class="chart-background">
                 <div class="chart-fill r2-best" style="width: 87.22%;"></div>
+                </div>
             </div>
 
-        </div>
+            <div class="metric-bar">
+                <div class="chart-label">
+                    <span>Random Forest</span>
+                    <strong>84.12%</strong>
+                </div>
+
+                <div class="chart-background">
+                    <div class="chart-fill r2" style="width: 87.22%;"></div>
+                </div> 
+            </div>
 
         <div class="metric-bar">
 
@@ -359,39 +357,38 @@
                 <strong>84.12%</strong>
             </div>
 
-            <div class="chart-background">
-                <div class="chart-fill r2" style="width: 84.12%;"></div>
-            </div>
-
+           <div class="chart-background">
+                <div class="chart-fill r2" style="width: 84.12%;"></div>">
+           </div>
         </div>
 
         <div class="metric-bar">
-
             <div class="chart-label">
                 <span>Linear Regression</span>
                 <strong>81.80%</strong>
             </div>
+                    
 
-            <div class="chart-background">
-                <div class="chart-fill r2" style="width: 81.80%;"></div>
-            </div>
-
+                <div class="chart-background">
+                    <div class="chart-fill r2" style="width: 81.80%;"></div>
+                
         </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Decision Tree</span>
-                <strong>77.70%</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill r2" style="width: 77.70%;"></div>
-            </div>
-
-        </div>
-
     </div>
+
+
+    <div class="metric-bar">
+        <div class="chart-label">
+            <span>Decision Tree</span>
+            <strrong>77.70%</strong>
+        </div>
+
+        <div class="chart-background">
+            <div class="chart-fill r2" style"width: 77.70%;"></div>"
+        </div>
+    </div>
+
+</div>
+    
 
 
     <!-- MAE -->
