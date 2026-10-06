@@ -1,12 +1,14 @@
 import pandas as pd
 from pathlib import Path
 
+BASE_DIR = Path(__file__).resolve().parent
+
 # =========================================================
 # ELT TRANSFORM STAGE
 # =========================================================
 
-input_file = Path("data/raw/customer_data.csv")
-output_file = Path("data/processed/customer_data_processed.csv")
+input_file = BASE_DIR / "data/raw/customer_data_ngn.csv"
+output_file = BASE_DIR / "data/processed/customer_data_processed.csv"
 
 print("=" * 60)
 print("ELT TRANSFORM STAGE")
@@ -15,8 +17,7 @@ print("=" * 60)
 # Automatically detect the separator
 df = pd.read_csv(
     input_file,
-    sep=None,
-    engine="python"
+    low_memory=False
 )
 
 print("\nRaw dataset shape:")
@@ -34,7 +35,7 @@ df.columns = df.columns.str.strip()
 
 df["Date"] = pd.to_datetime(
     df["Date"],
-    errors="coerce"
+    errors="raise"
 )
 
 # =========================================================
@@ -63,8 +64,11 @@ numeric_columns = [
 for column in numeric_columns:
     df[column] = pd.to_numeric(
         df[column],
-        errors="coerce"
+        errors="raise"
     )
+
+if df["CustomerLifetimeValue"].isna().any():
+    raise ValueError("CustomerLifetimeValue contains missing values.")
 
 # =========================================================
 # REMOVE DUPLICATES

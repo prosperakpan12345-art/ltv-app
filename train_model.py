@@ -27,12 +27,14 @@ print("=" * 60)
 print("CUSTOMER LIFETIME VALUE - MODEL TRAINING")
 print("=" * 60)
 
+BASE_DIR = Path(__file__).resolve().parent
+
 
 # =========================================================
 # 1. LOAD PROCESSED DATA
 # =========================================================
 
-data_path = Path("data/processed/customer_data_processed.csv")
+data_path = BASE_DIR / "data/processed/customer_data_processed.csv"
 
 df = pd.read_csv(data_path)
 
@@ -47,7 +49,7 @@ print(df.columns.tolist())
 # 2. DEFINE FEATURES AND TARGET
 # =========================================================
 
-X = df.drop(columns=["CustomerLifetimeValue", "Date"])
+X = df.drop(columns=["CustomerLifetimeValue", "Date", "CustomerID"])
 
 y = df["CustomerLifetimeValue"]
 
@@ -210,7 +212,8 @@ for name, model in models.items():
 # 8. CREATE MODELS DIRECTORY
 # =========================================================
 
-Path("models").mkdir(
+models_dir = BASE_DIR / "models"
+models_dir.mkdir(
     parents=True,
     exist_ok=True
 )
@@ -220,7 +223,7 @@ Path("models").mkdir(
 # 9. SAVE BEST MODEL
 # =========================================================
 
-model_path = "models/best_ltv_model.pkl"
+model_path = models_dir / "best_ltv_model.pkl"
 
 joblib.dump(
     best_model,
@@ -239,8 +242,9 @@ results_df = results_df.sort_values(
     ascending=False
 )
 
+results_path = models_dir / "model_results.csv"
 results_df.to_csv(
-    "models/model_results.csv",
+    results_path,
     index=False
 )
 
@@ -271,7 +275,7 @@ print("\nBest model saved to:")
 print(model_path)
 
 print("\nModel comparison saved to:")
-print("models/model_results.csv")
+print(results_path)
 
 print("\n" + "=" * 60)
 print("MODEL TRAINING COMPLETE")

@@ -1,608 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Customer Lifetime Value</title>
-
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='style.css') }}">
+    <meta name="theme-color" content="#f5f4ed">
+    <title>Customer lifetime value estimate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css', v=5) }}">
 </head>
-
 <body>
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Home">
+            <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+                <path class="brand-axis" d="M8 27.5H29M8.5 27V8" />
+                <path class="brand-trend" d="m12 22 5-5 4 2 7-9" />
+                <circle class="brand-point" cx="28" cy="10" r="2" />
+            </svg>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="nav-link is-current" href="#predict">LTV estimate</a>
+            <a class="nav-link" href="#performance">Model details</a>
+        </nav>
+    </header>
 
-<header class="dashboard-header">
-    <h1>Machine Learning Prediction Dashboard</h1>
-</header>
-  
-<main class="dashboard-container">
-
-
-    <!-- =========================
-         METRIC CARDS
-    ========================== -->
-
-    <section class="metrics-grid">
-
-        <div class="metric-card blue">
-            <div class="metric-icon">R²</div>
-
-            <div>
-                <p>Best R² Score</p>
-                <h2>87.22%</h2>
-                <span>Gradient Boosting</span>
+    <main id="top" class="page-shell">
+        <section class="intro" aria-labelledby="page-title">
+            <div class="intro-copy">
+                <p class="eyebrow">CUSTOMER LIFETIME VALUE</p>
+                <h1 id="page-title">Estimate customer<br><em>lifetime value.</em></h1>
+                <p class="intro-description">Enter a customer's profile and purchase patterns to estimate their lifetime value.</p>
+                <p class="dataset-notice">Model trained on 1,000 synthetic customer records. Estimates are illustrative and have not been validated against real customer histories.</p>
             </div>
-        </div>
+        </section>
 
+        <section class="metrics-strip" aria-label="Best model performance">
+            <article class="metric">
+                <p class="metric-label">Best R² score</p>
+                <p class="metric-value">{{ "%.2f"|format(best_model.R2 * 100) }}<span>%</span></p>
+                <p class="metric-detail">Held-out test set</p>
+            </article>
+            <article class="metric">
+                <p class="metric-label">Mean absolute error</p>
+                <p class="metric-value">₦{{ "{:,.0f}".format(best_model.MAE) }}</p>
+                <p class="metric-detail">Held-out test set</p>
+            </article>
+            <article class="metric">
+                <p class="metric-label">Root mean square error</p>
+                <p class="metric-value">₦{{ "{:,.0f}".format(best_model.RMSE) }}</p>
+                <p class="metric-detail">Held-out test set</p>
+            </article>
+            <article class="metric metric-model">
+                <p class="metric-label">Selected model</p>
+                <p class="metric-value">{{ best_model.Model }}</p>
+                <p class="metric-detail">Selected by test R²</p>
+            </article>
+        </section>
 
-        <div class="metric-card green">
-            <div class="metric-icon">✓</div>
+        <section id="predict" class="estimator-layout" aria-labelledby="estimator-title">
+            <div class="estimator-main">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">CUSTOMER DETAILS</p>
+                        <h2 id="estimator-title">Customer profile</h2>
+                        <p>Enter profile and purchase details to calculate an estimate.</p>
+                    </div>
+                    <span class="model-label">{{ best_model.Model }}</span>
+                </div>
 
-            <div>
-                <p>Best Model</p>
-                <h2>Gradient</h2>
-                <span>Boosting</span>
+                {% if error %}
+                <div class="error-message" role="alert">
+                    <span class="error-icon" aria-hidden="true">!</span>
+                    <div><strong>We couldn't generate an estimate.</strong><p>{{ error }}</p></div>
+                </div>
+                {% endif %}
+
+                <form method="POST" class="customer-form">
+                    <fieldset class="form-section">
+                        <legend>Customer profile</legend>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="month">Month</label>
+                                <select id="month" name="Month" required>
+                                    <option value="January" {% if selected_month == "January" %}selected{% endif %}>January</option>
+                                    <option value="February" {% if selected_month == "February" %}selected{% endif %}>February</option>
+                                    <option value="March" {% if selected_month == "March" %}selected{% endif %}>March</option>
+                                    <option value="April" {% if selected_month == "April" %}selected{% endif %}>April</option>
+                                    <option value="May" {% if selected_month == "May" %}selected{% endif %}>May</option>
+                                    <option value="June" {% if selected_month == "June" %}selected{% endif %}>June</option>
+                                    <option value="July" {% if selected_month == "July" %}selected{% endif %}>July</option>
+                                    <option value="August" {% if selected_month == "August" %}selected{% endif %}>August</option>
+                                    <option value="September" {% if selected_month == "September" %}selected{% endif %}>September</option>
+                                    <option value="October" {% if selected_month == "October" %}selected{% endif %}>October</option>
+                                    <option value="November" {% if selected_month == "November" %}selected{% endif %}>November</option>
+                                    <option value="December" {% if selected_month == "December" %}selected{% endif %}>December</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="season">Quarter <span class="label-hint">Based on selected month</span></label>
+                                <input id="season" type="text" value="{{ selected_season }}" readonly aria-live="polite">
+                            </div>
+                            <div class="field">
+                                <label for="age">Age</label>
+                                <input id="age" type="number" name="Age" min="{{ input_ranges.Age.min|int }}" max="{{ input_ranges.Age.max|int }}" step="1" value="{{ form_values.get('Age', '') }}" placeholder="e.g. 34" required>
+                            </div>
+                            <div class="field">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="Gender" required>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="region">Region</label>
+                                <select id="region" name="Region" required>
+                                    <option value="North Central">North Central</option>
+                                    <option value="North East">North East</option>
+                                    <option value="North West">North West</option>
+                                    <option value="South East">South East</option>
+                                    <option value="South South">South South</option>
+                                    <option value="South West">South West</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="income">Annual income (₦)</label>
+                                <input id="income" type="number" name="Income" min="{{ input_ranges.Income.min|int }}" max="{{ input_ranges.Income.max|int }}" step="1" value="{{ form_values.get('Income', '') }}" placeholder="₦500,000–₦20,000,000" required>
+                                <span class="input-range">Training range: ₦{{ "{:,.0f}".format(input_ranges.Income.min) }}–₦{{ "{:,.0f}".format(input_ranges.Income.max) }}</span>
+                            </div>
+                            <div class="field">
+                                <label for="membership">Membership tier</label>
+                                <select id="membership" name="Membership" required>
+                                    <option value="Bronze">Bronze</option>
+                                    <option value="Silver">Silver</option>
+                                    <option value="Gold">Gold</option>
+                                    <option value="Platinum">Platinum</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="satisfaction">Satisfaction score</label>
+                                <input id="satisfaction" type="number" step="0.1" min="{{ input_ranges.SatisfactionScore.min }}" max="{{ input_ranges.SatisfactionScore.max }}" name="SatisfactionScore" value="{{ form_values.get('SatisfactionScore', '') }}" placeholder="e.g. 4.2" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-section">
+                        <legend>Purchase behavior</legend>
+                        <div class="form-grid">
+                            <div class="field">
+                                <label for="products">Products purchased</label>
+                                <input id="products" type="number" name="ProductsPurchased" min="{{ input_ranges.ProductsPurchased.min|int }}" max="{{ input_ranges.ProductsPurchased.max|int }}" step="1" value="{{ form_values.get('ProductsPurchased', '') }}" placeholder="e.g. 12" required>
+                                <span class="input-range">Training range: {{ input_ranges.ProductsPurchased.min|int }}–{{ input_ranges.ProductsPurchased.max|int }}</span>
+                            </div>
+                            <div class="field">
+                                <label for="frequency">Purchases per year</label>
+                                <input id="frequency" type="number" name="PurchaseFrequency" min="{{ input_ranges.PurchaseFrequency.min|int }}" max="{{ input_ranges.PurchaseFrequency.max|int }}" step="1" value="{{ form_values.get('PurchaseFrequency', '') }}" placeholder="e.g. 6" required>
+                                <span class="input-range">Training range: {{ input_ranges.PurchaseFrequency.min|int }}–{{ input_ranges.PurchaseFrequency.max|int }} per year</span>
+                            </div>
+                            <div class="field">
+                                <label for="order-value">Average order value (₦)</label>
+                                <input id="order-value" type="number" step="0.01" min="{{ input_ranges.AverageOrderValue.min }}" max="{{ input_ranges.AverageOrderValue.max }}" name="AverageOrderValue" value="{{ form_values.get('AverageOrderValue', '') }}" placeholder="₦5,000–₦400,000" required>
+                                <span class="input-range">Training range: ₦{{ "{:,.0f}".format(input_ranges.AverageOrderValue.min) }}–₦{{ "{:,.0f}".format(input_ranges.AverageOrderValue.max) }}</span>
+                            </div>
+                            <div class="field">
+                                <label for="discount">Discount used</label>
+                                <select id="discount" name="DiscountUsed" required>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="channel">Marketing channel</label>
+                                <select id="channel" name="MarketingChannel" required>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Email">Email</option>
+                                    <option value="Direct">Direct</option>
+                                    <option value="Online">Online</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="churn">Churn risk</label>
+                                <select id="churn" name="ChurnRisk" required>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <p>CLV is estimated in Nigerian naira (₦).</p>
+                        <button class="predict-button" type="submit">Estimate customer value</button>
+                    </div>
+                </form>
             </div>
-        </div>
 
+            <aside class="estimate-aside" aria-live="polite">
+                {% if prediction is not none %}
+                <div class="result-panel">
+                    <p class="eyebrow">ESTIMATE</p>
+                    <p class="result-caption">Predicted customer lifetime value</p>
+                    <p class="prediction-value">₦{{ "{:,.2f}".format(prediction) }}</p>
+                    <div class="result-rule"></div>
+                    <p class="result-copy">Estimated lifetime revenue: average order value × purchases per year × expected retained years, adjusted for product breadth, discount use, membership and satisfaction.</p>
+                    <p class="result-footnote">{{ best_model.Model }} · synthetic-data estimate</p>
+                </div>
+                {% else %}
+                <div class="aside-card">
+                    <span class="aside-index">ESTIMATE INPUTS</span>
+                    <h3>What goes into the estimate</h3>
+                    <p>Annual revenue × expected retained years, adjusted for product breadth, discount use, membership, churn risk and satisfaction.</p>
+                    <div class="aside-rule"></div>
+                    <p class="aside-stat"><strong>14</strong><span>customer fields<br>in each estimate</span></p>
+                </div>
+                <div class="aside-tip">Training data and formula are synthetic. Estimates are not validated against real customer histories.</div>
+                {% endif %}
+            </aside>
+        </section>
 
-        <div class="metric-card orange">
-            <div class="metric-icon">MAE</div>
-
-            <div>
-                <p>Mean Absolute Error</p>
-                <h2>740.87</h2>
-                <span>Lower is better</span>
-            </div>
-        </div>
-
-
-        <div class="metric-card purple">
-            <div class="metric-icon">RMSE</div>
-
-            <div>
-                <p>Root Mean Square Error</p>
-                <h2>1253.85</h2>
-                <span>Lower is better</span>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PREDICTION SECTION
-    ========================== -->
-
-    <section class="dashboard-card">
-
-        <div class="section-title">
-
-            <div>
-                <h2>Customer Lifetime Value Prediction</h2>
-
-                <p>
-                    Enter customer information to estimate their
-                    lifetime value using the Gradient Boosting model.
-                </p>
-            </div>
-
-            <div class="model-badge">
-                Gradient Boosting
-            </div>
-
-        </div>
-
-
-        <form method="POST">
-
-            <div class="form-grid">
-
+        <section id="performance" class="performance-section" aria-labelledby="performance-title">
+            <div class="performance-heading">
                 <div>
-                    <label>Month</label>
-
-                    <select name="Month" required>
-                        <option value="January">January</option>
-                        <option value="February">February</option>
-                        <option value="March">March</option>
-                        <option value="April">April</option>
-                        <option value="May">May</option>
-                        <option value="June">June</option>
-                        <option value="July">July</option>
-                        <option value="August">August</option>
-                        <option value="September">September</option>
-                        <option value="October">October</option>
-                        <option value="November">November</option>
-                        <option value="December">December</option>
-                    </select>
+                    <p class="eyebrow">MODEL PERFORMANCE</p>
+                    <h2 id="performance-title">Model comparison</h2>
+                    <p>Results below come from a held-out test split of the synthetic training data.</p>
                 </div>
-
-
-                <div>
-                    <label>Season</label>
-
-                    <select name="Season" required>
-                        <option value="Q1">Q1</option>
-                        <option value="Q2">Q2</option>
-                        <option value="Q3">Q3</option>
-                        <option value="Q4">Q4</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>Age</label>
-                    <input type="number" name="Age" required>
-                </div>
-
-
-                <div>
-                    <label>Gender</label>
-
-                    <select name="Gender" required>
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>Region</label>
-
-                    <select name="Region" required>
-                        <option value="North">North</option>
-                        <option value="South">South</option>
-                        <option value="East">East</option>
-                        <option value="West">West</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>Income</label>
-                    <input type="number" name="Income" required>
-                </div>
-
-
-                <div>
-                    <label>Membership</label>
-
-                    <select name="Membership" required>
-                        <option value="Bronze">Bronze</option>
-                        <option value="Silver">Silver</option>
-                        <option value="Gold">Gold</option>
-                        <option value="Platinum">Platinum</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>Products Purchased</label>
-
-                    <input type="number"
-                           name="ProductsPurchased"
-                           required>
-                </div>
-
-
-                <div>
-                    <label>Purchase Frequency</label>
-
-                    <input type="number"
-                           name="PurchaseFrequency"
-                           required>
-                </div>
-
-
-                <div>
-                    <label>Average Order Value</label>
-
-                    <input type="number"
-                           step="0.01"
-                           name="AverageOrderValue"
-                           required>
-                </div>
-
-
-                <div>
-                    <label>Discount Used</label>
-
-                    <select name="DiscountUsed" required>
-                        <option value="Yes">Yes</option>
-                        <option value="No">No</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>Marketing Channel</label>
-
-                    <select name="MarketingChannel" required>
-                        <option value="Social Media">Social Media</option>
-                        <option value="Email">Email</option>
-                        <option value="Direct">Direct</option>
-                        <option value="Online">Online</option>
-                    </select>
-                </div>
-
-
-                <div>
-                    <label>Satisfaction Score</label>
-
-                    <input type="number"
-                           step="0.1"
-                           min="0"
-                           max="5"
-                           name="SatisfactionScore"
-                           required>
-                </div>
-
-
-                <div>
-                    <label>Churn Risk</label>
-
-                    <select name="ChurnRisk" required>
-                        <option value="Low">Low</option>
-                        <option value="Medium">Medium</option>
-                        <option value="High">High</option>
-                    </select>
-                </div>
-
+                <span class="performance-callout">Prediction model: {{ best_model.Model }}</span>
             </div>
 
-
-            <button class="predict-button" type="submit">
-                Predict Customer Lifetime Value
-            </button>
-
-        </form>
-
-
-    {% if prediction is not none %}
-
-    <div class="prediction-result">
-
-        <div>
-            <span>Prediction Result</span>
-
-            <h3>Predicted Customer Lifetime Value</h3>
-
-            <p>
-                This is the estimated value this customer may generate
-                over their relationship with the business.
-            </p>
-
-        <small>
-            Prediction generated using the Gradient Boosting model.
-        </small>
-
-    </div>
-
-    <div class="prediction-value">
-        #{{ "%.2f"|format(prediction) }}
-    </div>
-
-</div>
-
-{% endif %}
-
-
-    </section>
-
-
-    <!-- =========================
-         MODEL PERFORMANCE
-    ========================== -->
-
-    <section class="dashboard-card">
-
-        <div class="section-title">
-
-            <div>
-                <h2>Model Performance</h2>
-
-                <p>
-                    Comparison of four machine learning models
-                    trained for Customer Lifetime Value prediction.
-                </p>
-            </div>
-
-        </div>
-
-
-        <!-- R2 CHART -->
-
-        <!-- MODEL COMPARISON CHARTS -->
-
-<div class="charts-grid">  
-
-    <!-- R2 SCORE -->
-
-    <div class="chart-card">
-
-        <h3>R² Score</h3>
-
-        <p class="chart-description">
-            Higher values indicate better predictive performance.
-        </p> 
-
-        <div class="metric-bar">
-            <div class="chart-label">
-                <span>Gradient Boosting</span>
-                <strong>87.22%</strong>   
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill r2-best" style="width: 87.22%;"></div>
-                </div>
-            </div>
-
-            <div class="metric-bar">
-                <div class="chart-label">
-                    <span>Random Forest</span>
-                    <strong>84.12%</strong>
-                </div>
-
-                <div class="chart-background">
-                    <div class="chart-fill r2" style="width: 87.22%;"></div>
-                </div> 
-            </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Random Forest</span>
-                <strong>84.12%</strong>
-            </div>
-
-           <div class="chart-background">
-                <div class="chart-fill r2" style="width: 84.12%;"></div>">
-           </div>
-        </div>
-
-        <div class="metric-bar">
-            <div class="chart-label">
-                <span>Linear Regression</span>
-                <strong>81.80%</strong>
-            </div>
-                    
-
-                <div class="chart-background">
-                    <div class="chart-fill r2" style="width: 81.80%;"></div>
-                
-        </div>
-    </div>
-
-
-    <div class="metric-bar">
-        <div class="chart-label">
-            <span>Decision Tree</span>
-            <strrong>77.70%</strong>
-        </div>
-
-        <div class="chart-background">
-            <div class="chart-fill r2" style"width: 77.70%;"></div>"
-        </div>
-    </div>
-
-</div>
-    
-
-
-    <!-- MAE -->
-
-    <div class="chart-card">
-
-        <h3>MAE Comparison</h3>
-
-        <p class="chart-description">
-            Lower values indicate smaller prediction errors.
-        </p>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Gradient Boosting</span>
-                <strong>740.87</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill mae-best" style="width: 67%;"></div>
-            </div>
-
-        </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Random Forest</span>
-                <strong>843.05</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill mae" style="width: 76%;"></div>
-            </div>
-
-        </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Linear Regression</span>
-                <strong>1107.91</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill mae" style="width: 100%;"></div>
-            </div>
-
-        </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Decision Tree</span>
-                <strong>1060.11</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill mae" style="width: 96%;"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- RMSE -->
-
-    <div class="chart-card">
-
-        <h3>RMSE Comparison</h3>
-
-        <p class="chart-description">
-            Lower values indicate smaller prediction errors.
-        </p>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Gradient Boosting</span>
-                <strong>1253.85</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill rmse-best" style="width: 76%;"></div>
-            </div>
-
-        </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Random Forest</span>
-                <strong>1397.57</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill rmse" style="width: 84%;"></div>
-            </div>
-
-        </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Linear Regression</span>
-                <strong>1496.40</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill rmse" style="width: 90%;"></div>
-            </div>
-
-        </div>
-
-        <div class="metric-bar">
-
-            <div class="chart-label">
-                <span>Decision Tree</span>
-                <strong>1656.29</strong>
-            </div>
-
-            <div class="chart-background">
-                <div class="chart-fill rmse" style="width: 100%;"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-        <!-- MODEL TABLE -->
-
-        <div class="table-container">
-
-            <h3>Detailed Model Comparison</h3>
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Model</th>
-                        <th>R² Score</th>
-                        <th>MAE</th>
-                        <th>RMSE</th>
-                    </tr>
-
-                </thead>
-
-
-                <tbody>
-
+            <div class="charts-grid">
+                <article class="chart-card">
+                    <div class="chart-heading"><h3>R² score</h3><span>Higher is better</span></div>
                     {% for result in model_results %}
-
-                    <tr
-                        {% if result.Model == 'Gradient Boosting' %}
-                        class="best-row"
-                        {% endif %}
-                    >
-
-                        <td>
-                            <strong>{{ result.Model }}</strong>
-
-                            {% if result.Model == 'Gradient Boosting' %}
-                            <span class="best-tag">BEST</span>
-                            {% endif %}
-                        </td>
-
-                        <td>
-                            {{ "%.2f"|format(result.R2 * 100) }}%
-                        </td>
-
-                        <td>
-                            {{ "%.2f"|format(result.MAE) }}
-                        </td>
-
-                        <td>
-                            {{ "%.2f"|format(result.RMSE) }}
-                        </td>
-
-                    </tr>
-
+                    <div class="metric-bar">
+                        <div class="chart-label"><span>{{ result.Model }}</span><strong>{{ "%.2f"|format(result.R2 * 100) }}%</strong></div>
+                        <div class="chart-background"><div class="chart-fill{% if result.Model == best_model.Model %} is-best{% endif %}" style="width: {{ [result.R2 * 100, 0]|max }}%;"></div></div>
+                    </div>
                     {% endfor %}
+                </article>
 
-                </tbody>
+                <article class="chart-card">
+                    <div class="chart-heading"><h3>Mean absolute error</h3><span>Lower is better</span></div>
+                    {% for result in model_results %}
+                    <div class="metric-bar">
+                        <div class="chart-label"><span>{{ result.Model }}</span><strong>₦{{ "{:,.0f}".format(result.MAE) }}</strong></div>
+                        <div class="chart-background"><div class="chart-fill{% if result.Model == best_model.Model %} is-best{% endif %}" style="width: {{ result.MAE / (model_results|map(attribute='MAE')|max) * 100 }}%;"></div></div>
+                    </div>
+                    {% endfor %}
+                </article>
 
-            </table>
+                <article class="chart-card">
+                    <div class="chart-heading"><h3>Root mean square error</h3><span>Lower is better</span></div>
+                    {% for result in model_results %}
+                    <div class="metric-bar">
+                        <div class="chart-label"><span>{{ result.Model }}</span><strong>₦{{ "{:,.0f}".format(result.RMSE) }}</strong></div>
+                        <div class="chart-background"><div class="chart-fill{% if result.Model == best_model.Model %} is-best{% endif %}" style="width: {{ result.RMSE / (model_results|map(attribute='RMSE')|max) * 100 }}%;"></div></div>
+                    </div>
+                    {% endfor %}
+                </article>
+            </div>
 
-        </div>
+            <div class="table-wrap">
+                <table>
+                    <caption>Detailed model comparison</caption>
+                    <thead><tr><th scope="col">Model</th><th scope="col">R² score</th><th scope="col">MAE</th><th scope="col">RMSE</th></tr></thead>
+                    <tbody>
+                        {% for result in model_results %}
+                        <tr{% if result.Model == best_model.Model %} class="best-row"{% endif %}>
+                            <th scope="row">{{ result.Model }}{% if result.Model == best_model.Model %} <span class="best-tag">BEST</span>{% endif %}</th>
+                            <td>{{ "%.2f"|format(result.R2 * 100) }}%</td>
+                            <td>₦{{ "{:,.0f}".format(result.MAE) }}</td>
+                            <td>₦{{ "{:,.0f}".format(result.RMSE) }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
-    </section>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer>
-
-        <p>
-            Customer Lifetime Value Prediction System
-        </p>
-
-        <span>
-            Built with Python • Flask • Scikit-learn
-        </span>
-
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#top" aria-label="Customer value home">
+            <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+                <path class="brand-axis" d="M8 27.5H29M8.5 27V8" />
+                <path class="brand-trend" d="m12 22 5-5 4 2 7-9" />
+                <circle class="brand-point" cx="28" cy="10" r="2" />
+            </svg>
+            <span>Customer value</span>
+        </a>
+        <p>Customer lifetime value estimate</p>
+        <a href="#top" class="back-to-top">Back to top</a>
     </footer>
+    <script>
+        const monthSelect = document.getElementById("month");
+        const quarterDisplay = document.getElementById("season");
+        const quarterByMonth = {
+            January: "Q1",
+            February: "Q1",
+            March: "Q1",
+            April: "Q2",
+            May: "Q2",
+            June: "Q2",
+            July: "Q3",
+            August: "Q3",
+            September: "Q3",
+            October: "Q4",
+            November: "Q4",
+            December: "Q4"
+        };
 
-
-</main>
-
+        monthSelect.addEventListener("change", () => {
+            quarterDisplay.value = quarterByMonth[monthSelect.value];
+        });
+    </script>
 </body>
 </html>
